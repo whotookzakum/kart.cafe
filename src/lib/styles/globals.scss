@@ -1,11 +1,8 @@
-html {
+body {
+    margin: 0;
     background: var(--bg);
     color: var(--text1);
     font-family: "Poppins", system-ui, sans-serif;
-}
-
-body {
-    margin: 0;
 }
 
 * {
@@ -39,19 +36,19 @@ a {
 
         .surface {
             background: var(--surface3);
-            border-color: var(--surface4);
+            border-color: var(--surface4, hsl(219, 70%, 45%));
         }
     }
 }
 
 :root {
     --text1: hsl(0, 0%, 92%);
+    --text2: hsl(219, 10%, 72%);
     --bg: hsl(219, 70%, 18%);
     --accent: skyblue;
     --surface1: hsl(219, 70%, 23%);
     --surface2: hsl(219, 70%, 28%);
     --surface3: hsl(219, 70%, 35%);
-    --surface4: hsl(219, 70%, 45%);
     --surface-shadow: rgba(0, 0, 0, 0.17);
 }
 
