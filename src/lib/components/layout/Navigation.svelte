@@ -2,7 +2,7 @@
     import TimeUntilReset from "../misc/TimeUntilReset.svelte";
 </script>
 
-<nav>
+<nav class="surface box">
     <a class="logo-wrapper" href="/">
         <img src="/images/boz.png" alt="" height="72" />
         <div class="grid">
@@ -34,9 +34,8 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         align-items: center;
-        background: hsl(219, 70%, 23%);
-        border-bottom: 1px solid hsl(219, 70%, 25%); // hsl(219, 70%, 35%);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+        border: unset;
+        border-bottom: 1px solid var(--surface2);
         overflow: hidden;
         line-height: 1.1;
     }
@@ -68,7 +67,7 @@
 
         span {
             font-size: 0.9rem;
-            color: skyblue;
+            color: var(--accent);
         }
     }
 
@@ -76,7 +75,7 @@
         height: 24px;
         width: 1px;
         border: none;
-        background: hsl(219, 70%, 35%);
+        background: var(--surface3);
     }
 
     strong {
