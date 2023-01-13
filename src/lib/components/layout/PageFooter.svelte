@@ -5,5 +5,6 @@
         color: var(--text2);
         font-size: 0.9rem;
         text-align: right;
+        padding-bottom: 1rem;
     }
 </style>

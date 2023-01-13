@@ -45,6 +45,7 @@
         display: flex;
         gap: 1rem;
         align-items: center;
+        justify-content: center;
     }
 
     .logo-wrapper {
@@ -67,18 +68,24 @@
 
         span {
             font-size: 0.9rem;
-            color: var(--accent);
+            color: var(--highlight);
         }
+    }
+
+    a {
+        color: var(--text1);
+        border: none;
+    }
+
+    .links a {
+        padding: 0.5rem;
     }
 
     hr {
         height: 24px;
         width: 1px;
+        margin: 0;
         border: none;
         background: var(--surface3);
-    }
-
-    strong {
-        font-weight: 600;
     }
 </style>
