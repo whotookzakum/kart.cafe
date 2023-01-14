@@ -1,0 +1,8 @@
+Diffuse=T_Mesh_Bazzi_ac19a842ddf4aca076bf_SgBakedMaterial_LOD3_0_Diffuse
+Normal=T_Mesh_Bazzi_ac19a842ddf4aca076bf_SgBakedMaterial_LOD3_0_Normal
+Other[0]=T_Mesh_Bazzi_ac19a842ddf4aca076bf_SgBakedMaterial_LOD3_0_MRS
+Other[1]=BaseFlattenNormalMap
+Other[2]=Kart_Null_Black
+Other[3]=Kart_Null_Mask
+Other[4]=Kart_Null_White
+Other[5]=CustomIBL_Cubemap

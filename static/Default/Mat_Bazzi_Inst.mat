@@ -1,0 +1,7 @@
+Diffuse=Tex_Bazzi_D
+Normal=Tex_Bazzi_N
+Other[0]=Tex_Bazzi_MT
+Other[1]=Kart_Null_Mask
+Other[2]=Kart_Null_Normal
+Other[3]=Kart_Null_White
+Other[4]=CustomIBL_Cubemap

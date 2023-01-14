@@ -11,13 +11,13 @@
         </div>
     </a>
     <div class="links">
-        <a href="/">Karts</a>
+        <a href="/karts">Karts</a>
         <hr />
-        <a href="/">Characters</a>
+        <a href="/characters">Characters</a>
         <hr />
-        <a href="/">Accessories</a>
+        <a href="/accessories">Accessories</a>
         <hr />
-        <a href="/">Tracks</a>
+        <a href="/tracks">Tracks</a>
     </div>
     <div class="timer-wrapper grid">
         <span>Time until reset</span>
