@@ -18,11 +18,6 @@ a {
     width: fit-content;
 }
 
-a.surface:hover {
-    background: var(--surface2);
-    border-color: var(--surface3);
-}
-
 h1,
 h2,
 h3,
@@ -43,6 +38,16 @@ h2, h1 {
 
 h1, h2:not(:first-of-type) {
     margin-top: 4rem;
+}
+
+figure {
+    margin: 0;
+    
+    figcaption {
+        text-align: center;
+        color: var(--highlight);
+        font-size: 0.9rem;
+    }
 }
 
 .grid {
@@ -83,8 +88,8 @@ h1, h2:not(:first-of-type) {
     --surface-shadow: rgba(0, 0, 0, 0.17);
 }
 
-// Poppins
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// // Poppins
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// Brygada
-@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+// // Brygada
+// @import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');

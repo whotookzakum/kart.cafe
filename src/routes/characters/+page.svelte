@@ -12,7 +12,7 @@
         {#each characters as character}
             <Item
                 imgSrc={character.imgSrc}
-                name="Bazzi"
+                name={character.name}
                 href={`/characters/${character.id}`}
             />
         {/each}

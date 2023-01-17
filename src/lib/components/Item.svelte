@@ -2,26 +2,38 @@
     export let imgSrc, name, href;
 </script>
 
-<li>
-    <a {href} class="box surface grid">
-        <img src={imgSrc} alt="" width="408" height="380" loading="lazy">
-        <span>{name}</span>
-    </a>
+<li class="box surface">
+    <img src={imgSrc} alt={name} width="408" height="380" loading="lazy" />
+    <a {href}>{name}</a>
 </li>
 
 <style lang="scss">
-    a {
-        place-items: center;
-        gap: 0.5rem;
-        color: inherit;
+    li {
+        position: relative;
+        text-align: center;
         transition: all 0.1s linear;
 
         &:hover {
+            background: var(--surface2);
+            border-color: var(--surface3);
             transform: translateY(-4px);
         }
     }
 
+    a {
+        color: inherit;
+        border: none;
+
+        // Clickable everywhere
+        &::before {
+            content: "";
+            inset: 0;
+            position: absolute;
+        }
+    }
+
     img {
+        margin-bottom: 0.5rem;
         width: 100%;
         height: auto;
     }
