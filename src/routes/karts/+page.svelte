@@ -1,7 +1,9 @@
 <script>
     import Item from "$lib/components/Item.svelte";
-    import karts from "$lib/data/karts.json";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
+
+    export let data
+    const karts = data.items
 </script>
 
 <div class="full-bleed grid">

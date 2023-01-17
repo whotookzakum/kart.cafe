@@ -1,7 +1,9 @@
 <script>
     import Item from "$lib/components/Item.svelte";
-    import characters from "$lib/data/characters.json";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
+
+    export let data;
+    const characters = data.items;
 </script>
 
 <div class="full-bleed grid">
