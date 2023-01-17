@@ -1,3 +1,7 @@
+<script>
+    export let modelName;
+</script>
+
 <svelte:head>
     <script
         type="module"
@@ -7,7 +11,7 @@
 
 <model-viewer
     alt="Helena"
-    src="/lodu.glb"
+    src={`/${modelName}.glb`}
     ar
     shadow-intensity="1"
     camera-controls

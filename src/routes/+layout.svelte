@@ -17,7 +17,6 @@
         grid-template-columns: 1fr min(60ch, calc(100% - 2rem)) 1fr;
         max-inline-size: 800px;
         gap: 1rem;
-        padding-bottom: 5vmin;
 
         & > * {
             grid-column: 2;

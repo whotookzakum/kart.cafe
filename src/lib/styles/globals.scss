@@ -18,6 +18,11 @@ a {
     width: fit-content;
 }
 
+a.surface:hover {
+    background: var(--surface2);
+    border-color: var(--surface3);
+}
+
 h1,
 h2,
 h3,
@@ -48,6 +53,7 @@ h1, h2:not(:first-of-type) {
     border: 1px solid var(--surface2);
     box-shadow: 0 2px 4px var(--surface-shadow);
     padding: 1rem;
+    border-radius: 7px; // 5-10px
 }
 
 .surface {

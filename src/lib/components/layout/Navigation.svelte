@@ -28,6 +28,7 @@
 <style lang="scss">
     nav {
         position: sticky;
+        z-index: 10;
         top: 0;
         padding: 1rem;
         display: grid;
@@ -38,6 +39,7 @@
         border-bottom: 1px solid var(--surface2);
         overflow: hidden;
         line-height: 1.1;
+        border-radius: 0;
     }
 
     .logo-wrapper,
