@@ -1,4 +1,36 @@
 {
-  "name": "Bazzi",
-  "id": 100000002
+  "id": 100000002,
+  "imgSrc": "/images/ItemIcon/character/Character_100000002.png",
+  "costumes": [
+    {
+      "id": 202000001,
+      "imgSrc": "/images/ItemIcon/costume/Costume_202000001.png",
+      "rarity": 0
+    },
+    {
+      "id": 202000004,
+      "imgSrc": "/images/ItemIcon/costume/Costume_202000004.png",
+      "rarity": 0
+    },
+    {
+      "id": 202000005,
+      "imgSrc": "/images/ItemIcon/costume/Costume_202000005.png",
+      "rarity": 0
+    },
+    {
+      "id": 202000008,
+      "imgSrc": "/images/ItemIcon/costume/Costume_202000008.png",
+      "rarity": 0
+    },
+    {
+      "id": 202000012,
+      "imgSrc": "/images/ItemIcon/costume/Costume_202000012.png",
+      "rarity": 0
+    },
+    {
+      "id": 202000013,
+      "imgSrc": "/images/ItemIcon/costume/Costume_202000013.png",
+      "rarity": 0
+    }
+  ]
 }

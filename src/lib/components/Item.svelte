@@ -1,10 +1,10 @@
 <script>
-    export let imgSrc, name;
+    export let imgSrc, name, href;
 </script>
 
 <li>
-    <a href="/characters" class="box surface grid">
-        <img src={`/images/${imgSrc}.png`} alt="" width="408" height="380" loading="lazy">
+    <a {href} class="box surface grid">
+        <img src={imgSrc} alt="" width="408" height="380" loading="lazy">
         <span>{name}</span>
     </a>
 </li>

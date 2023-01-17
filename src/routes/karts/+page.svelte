@@ -11,8 +11,9 @@
     <ItemMenu itemWidth="140">
         {#each karts as kart}
             <Item
-                imgSrc={`ItemIcon/kart/Kart_${kart.id}`}
+                imgSrc={`/images/ItemIcon/kart/Kart_${kart.id}.png`}
                 name={kart.name}
+                href={`/karts/${kart.id}`}
             />
         {/each}
     </ItemMenu>

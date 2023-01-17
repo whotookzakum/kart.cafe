@@ -11,8 +11,9 @@
     <ItemMenu itemWidth="140">
         {#each characters as character}
             <Item
-                imgSrc={`ItemIcon/character/Character_${character.id}`}
-                name={character.name}
+                imgSrc={character.imgSrc}
+                name="Bazzi"
+                href={`/characters/${character.id}`}
             />
         {/each}
     </ItemMenu>
