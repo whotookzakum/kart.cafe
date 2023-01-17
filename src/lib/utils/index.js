@@ -32,7 +32,11 @@ export const fetchKarts = async () => {
   const allItems = await Promise.all(
     iterableItemFiles.map(async ([path, resolver]) => {
       const data = await resolver()
-      return data.default
+      // Add imgSrc for kart based on id
+      return {
+        ...data.default,
+        imgSrc: `/images/ItemIcon/kart/Kart_${data.default.id}.png`
+      }
     })
   )
 
