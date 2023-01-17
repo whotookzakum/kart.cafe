@@ -7,23 +7,16 @@
 
 <div class="full-bleed grid">
     <h1>{data.name}</h1>
-    <img
-        src={data.imgSrc}
-        alt=""
-        width="408"
-        height="380"
-        loading="lazy"
-    />
+    <img src={data.imgSrc} alt="" width="408" height="380" loading="lazy" />
 
-    <h2>Costumes</h2>
-    <ItemMenu itemWidth="120">
-        {#each data.costumes as costume}
-            <Item
-                imgSrc={costume.imgSrc}
-                name={costume.name}
-            />
-        {/each}
-    </ItemMenu>
+    {#if data.costumes}
+        <h2>Costumes</h2>
+        <ItemMenu itemWidth="120">
+            {#each data.costumes as costume}
+                <Item imgSrc={costume.imgSrc} name={costume.name} />
+            {/each}
+        </ItemMenu>
+    {/if}
 </div>
 
 <style>

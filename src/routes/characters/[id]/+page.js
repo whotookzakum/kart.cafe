@@ -1,11 +1,6 @@
-import { fetchCharacters } from "$lib/utils"
+import { fetchCharacters } from '$lib/utils'
 
-export const load = async ({ params }) => {
-    // const allCharacters = await fetchCharacters()
-    // const characterId = params.id
-    // const character = allCharacters.find(c => c.id == characterId)
-    // const fileName = character.name.toLowerCase().replace(" ", "-")
-
-    const characterData = await import (`../../../lib/data/characters/bazzi.json`)
-    return { ...characterData }
+export const load = async () => {
+    const items = await fetchCharacters()
+    return items[1]
 }

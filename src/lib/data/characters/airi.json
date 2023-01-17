@@ -1,4 +1,15 @@
 {
   "id": 100000017,
-  "imgSrc": "/images/ItemIcon/character/Character_100000017.png"
+  "costumes": [
+    {
+      "id": 217000001,
+      "imgSrc": "/images/ItemIcon/costume/Costume_217000001.png",
+      "rarity": 0
+    },
+    {
+      "id": 217000005,
+      "imgSrc": "/images/ItemIcon/costume/Costume_217000005.png",
+      "rarity": 0
+    }
+  ]
 }
