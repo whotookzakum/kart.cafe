@@ -1,6 +1,7 @@
 <script>
     import Item from "$lib/components/Item.svelte";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
+    import enUSLocale from "$lib/locale/en-US.json"
 
     export let data;
     const characters = data.items;
@@ -12,7 +13,7 @@
         {#each characters as character}
             <Item
                 imgSrc={character.imgSrc}
-                name={character.name}
+                name={enUSLocale.String[`Item_Character:${character.id}_NAME`]}
                 href={`/characters/${character.id}`}
             />
         {/each}
