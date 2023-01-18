@@ -1,5 +1,5 @@
 <script>
-    import Item from "$lib/components/Item.svelte";
+    import TrackItem from "$lib/components/TrackItem.svelte";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
     import enUSLocale from "$lib/locale/en-US.json";
 
@@ -11,10 +11,9 @@
     <h1>Tracks</h1>
     <ItemMenu itemWidth="240">
         {#each tracks as track}
-            <Item
-                imgSrc={track.imgSrc}
+            <TrackItem
+                {track}
                 name={enUSLocale.String[`TrackName2_${track.id}`]}
-                href={`/tracks/${track.id}`}
             />
         {/each}
     </ItemMenu>
