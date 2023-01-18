@@ -12,6 +12,8 @@
         position: relative;
         text-align: center;
         transition: all 0.1s linear;
+        // padding: 0;
+        overflow: hidden;
 
         &:hover {
             background: var(--surface2);
@@ -23,7 +25,7 @@
     a {
         color: inherit;
         border: none;
-
+        
         // Clickable everywhere
         &::before {
             content: "";
