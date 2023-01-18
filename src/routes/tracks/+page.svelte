@@ -1,16 +1,22 @@
 <script>
     import Item from "$lib/components/Item.svelte";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
+    import enUSLocale from "$lib/locale/en-US.json";
+
+    export let data;
+    const tracks = data.items;
 </script>
 
 <div class="full-bleed grid">
     <h1>Tracks</h1>
     <ItemMenu itemWidth="240">
-        <Item imgSrc="/images/Track/Loading/Beach_R01.png" name="map" href={`/tracks`} />
-        <Item imgSrc="/images/Track/Loading/Desert_I02.png" name="map" href={`/tracks`} />
-        <Item imgSrc="/images/Track/Loading/Mine_R04.png" name="map" href={`/tracks`} />
-        <Item imgSrc="/images/Track/Loading/Moonhill_I04.png" name="map" href={`/tracks`} />
-        <Item imgSrc="/images/Track/Loading/World_R01.png" name="map" href={`/tracks`} />
+        {#each tracks as track}
+            <Item
+                imgSrc={track.imgSrc}
+                name={enUSLocale.String[`TrackName2_${track.id}`]}
+                href={`/tracks/${track.id}`}
+            />
+        {/each}
     </ItemMenu>
 </div>
 

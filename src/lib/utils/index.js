@@ -42,3 +42,21 @@ export const fetchKarts = async () => {
 
   return allItems
 }
+
+export const fetchTracks = async () => {
+  const allTrackFiles = import.meta.glob('/src/lib/data/tracks/**/*.json')
+  const iterableItemFiles = Object.entries(allTrackFiles)
+
+  const allItems = await Promise.all(
+    iterableItemFiles.map(async ([path, resolver]) => {
+      const data = await resolver()
+      // Add imgSrc for track based on id
+      return {
+        ...data.default,
+        imgSrc: `/images/Track/Loading/${data.default.id}.png`
+      }
+    })
+  )
+
+  return allItems
+}
