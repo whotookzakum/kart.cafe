@@ -1,12 +1,14 @@
 <script>
-    import itemDropRates from "$lib/data/itemModeDropRates.json";
-    const ranks = [
-        "Top",
-        "High",
-        "Mid",
-        "Low",
-        // "Bottom"
-    ];
+    import squad from "$lib/data/itemModeDropRates/squad.json";
+    import duo from "$lib/data/itemModeDropRates/duo.json";
+    import solo from "$lib/data/itemModeDropRates/solo.json";
+    import rankDefs from "$lib/data/itemModeDropRates/rankDefs.json";
+    
+    export let mode = "squad";
+    export let players = 8;
+    
+    const dropRates = { solo, duo, squad }
+    const ranks = Object.entries(rankDefs.find(rank => rank.players === players)[mode])
 </script>
 
 <table class="surface box">
@@ -17,8 +19,8 @@
     <tbody>
         {#each ranks as rank, rankIndex}
             <tr>
-                <th>{rank}</th>
-                {#each itemDropRates
+                <th>{rank[1]}</th>
+                {#each dropRates[mode]
                     .filter((item) => item.dropRates[rankIndex] > 0)
                     .sort((a, b) => b.dropRates[rankIndex] - a.dropRates[rankIndex]) as item}
                     <td>

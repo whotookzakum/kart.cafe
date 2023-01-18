@@ -17,7 +17,7 @@
     {
         "name": "EMP",
         "imgSrc": "ItemSlot/spaceShipDefence",
-        "dropRates": [15, 0, 0, 0, 0]
+        "dropRates": [15, 0, 5, 5, 0]
     },
     {
         "name": "Cloud",
