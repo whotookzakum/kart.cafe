@@ -3,19 +3,51 @@
 </script>
 
 <li class="box surface">
-    <img class="bg" src={track.imgSrc} alt={name} width="408" height="380" loading="lazy" />
+    <img
+        class="bg"
+        src={track.imgSrc}
+        alt={name}
+        width="408"
+        height="380"
+        loading="lazy"
+    />
     <a href={`/tracks/${track.id}`}>
         <span>{name}</span>
     </a>
-    <span class="difficulty">
-        {#each { length: track.difficulty } as _}
-            <i class="circle" />
-        {/each}
-    </span>
-    <div class="modes">
-        <img src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png" alt="Speed mode" width="18" height="18">
-        <img src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png" alt="Item mode" width="18" height="18">
-    </div>
+    {#if track.difficulty}
+        <div class="top-left">
+            {#if track.reqLicense}
+                <img
+                    class="license-level"
+                    src={`/images/Common/_Res/Texture/License_${track.reqLicense}_Simple.png`}
+                    alt={track.reqLicense}
+                    width="330"
+                    height="367"
+                />
+            {/if}
+            <div class="difficulty">
+                {#each { length: 5 } as _, i}
+                    <i class="dot" class:fill={i < track.difficulty} />
+                {/each}
+            </div>
+        </div>
+        <div class="modes">
+            <img
+                src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
+                alt="Speed mode"
+                width="24"
+                height="24"
+            />
+            {#if track.itemMode}
+                <img
+                    src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png"
+                    alt="Item mode"
+                    width="24"
+                    height="24"
+                />
+            {/if}
+        </div>
+    {/if}
 </li>
 
 <style lang="scss">
@@ -26,11 +58,12 @@
         overflow: hidden;
         filter: grayscale(0.3) brightness(1);
 
-        &:hover {
+        &:hover, &:focus-within {
             background: var(--surface2);
             border-color: var(--surface3);
             transform: translateY(-4px);
-            filter: grayscale(0) brightness(1.1);
+            filter: grayscale(0) brightness(1);
+            // border-color: var(--accent);
         }
     }
 
@@ -60,25 +93,47 @@
         }
     }
 
-    .difficulty {
+    .top-left {
         display: flex;
+        align-items: center;
         gap: 0.25rem;
         position: absolute;
         top: 0.5rem;
         left: 0.5rem;
-        background: rgba(34, 34, 34, 0.5);
+    }
+
+    .difficulty {
+        display: flex;
+        gap: 0.25rem;
         padding: 0.25rem;
         border-radius: 3px;
+        background: rgba(34, 34, 34, 0.6);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     }
 
-    .circle {
+    .dot {
         display: block;
         height: 12px;
         width: 12px;
-        background: radial-gradient(circle at top left, gold, var(--accent));
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), inset 0 1px 3px rgba(255, 187, 0, 0.5);
+        background: #808080;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
         border-radius: 50%;
+
+        &.fill {
+            background: radial-gradient(
+                circle at top left,
+                #ffd42a,
+                var(--accent)
+            );
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7),
+                inset 0 1px 3px rgba(255, 187, 0, 0.5);
+        }
+    }
+
+    .license-level {
+        width: 22px;
+        height: auto;
+        filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4))
     }
 
     img.bg {
@@ -88,12 +143,12 @@
     }
 
     .modes {
-        display: flex;
+        display: grid;
         gap: 0.25rem;
         position: absolute;
         top: 0.5rem;
         right: 0.5rem;
-        
+
         img {
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
         }

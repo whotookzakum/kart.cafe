@@ -1,4 +1,6 @@
 {
     "id": "Forest_I04",
-    "difficulty": 2
+    "difficulty": 2,
+    "itemMode": true,
+    "reqLicense": "B2"
 }

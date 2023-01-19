@@ -1,4 +1,6 @@
 {
     "id": "Ice_I05",
-    "difficulty": 2
+    "difficulty": 2,
+    "itemMode": true,
+    "reqLicense": "B2"
 }

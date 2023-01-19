@@ -1,4 +1,6 @@
 {
     "id": "Desert_I06",
-    "difficulty": 2
+    "difficulty": 2,
+    "itemMode": true,
+    "reqLicense": "B2"
 }

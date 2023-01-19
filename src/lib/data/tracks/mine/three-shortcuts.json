@@ -1,4 +1,5 @@
 {
     "id": "Mine_R04",
-    "difficulty": 4
+    "difficulty": 4,
+    "reqLicense": "L3"
 }

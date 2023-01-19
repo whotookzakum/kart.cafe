@@ -1,4 +1,6 @@
 {
     "id": "Village_I01",
-    "difficulty": 2
+    "difficulty": 2,
+    "itemMode": true,
+    "reqLicense": "B2"
 }

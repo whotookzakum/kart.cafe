@@ -19,6 +19,7 @@
             background: var(--surface2);
             border-color: var(--surface3);
             transform: translateY(-4px);
+            // border-color: var(--accent);
         }
     }
 
