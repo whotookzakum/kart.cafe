@@ -179,6 +179,7 @@
 
             img {
                 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+                border-radius: 3px;
             }
         }
     }
