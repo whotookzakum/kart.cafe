@@ -13,7 +13,7 @@
         <h2>Costumes</h2>
         <ItemMenu itemWidth="120">
             {#each data.costumes as costume}
-                <Item imgSrc={costume.imgSrc} name={costume.name} />
+                <Item imgSrc={costume.imgSrc} name={costume.id} />
             {/each}
         </ItemMenu>
     {/if}
