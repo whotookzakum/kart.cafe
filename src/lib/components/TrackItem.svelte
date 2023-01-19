@@ -1,5 +1,6 @@
 <script>
     import enUSLocale from "$lib/locale/en-US.json";
+    import TrackDifficulty from "./TrackDifficulty.svelte";
     export let track;
 </script>
 
@@ -22,40 +23,59 @@
             >
         </span>
     </a>
+    {#if track.hasMinimap}
+        <img
+            class="minimap absolute"
+            src={`/images/Track/MiniMap/${track.id}_minimap.png`}
+            alt="MiniMap"
+            width="96"
+            height="96"
+            loading="lazy"
+        />
+    {/if}
     {#if track.difficulty}
-        <div class="top-left">
-            {#if track.reqLicense}
-                <img
-                    class="license-level"
-                    src={`/images/Common/_Res/Texture/License_${track.reqLicense}_Simple.png`}
-                    alt={track.reqLicense}
-                    width="330"
-                    height="367"
-                />
-            {/if}
-            <div class="difficulty">
-                {#each { length: 5 } as _, i}
-                    <i class="dot" class:fill={i < track.difficulty} />
-                {/each}
+        <div class="track-metadata absolute">
+            <div class="left">
+                {#if track.reqLicense}
+                    <img
+                        class="license-level"
+                        src={`/images/Common/_Res/Texture/License_${track.reqLicense}_Simple.png`}
+                        alt={track.reqLicense}
+                        width="330"
+                        height="367"
+                        loading="lazy"
+                    />
+                {/if}
+                <TrackDifficulty difficulty={track.difficulty} />
             </div>
-        </div>
-        <div class="top-right">
-            <img
-                src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
-                alt="Speed mode"
-                width="24"
-                height="24"
-            />
-            {#if track.itemMode}
+            <div class="right">
                 <img
-                    src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png"
-                    alt="Item mode"
+                    src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
+                    alt="Speed mode"
                     width="24"
                     height="24"
+                    loading="lazy"
                 />
-            {/if}
+                {#if track.itemMode}
+                    <img
+                        src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png"
+                        alt="Item mode"
+                        width="24"
+                        height="24"
+                        loading="lazy"
+                    />
+                {/if}
+            </div>
         </div>
     {/if}
+    <!-- <img
+        class="absolute"
+        style="bottom: 0.5rem; right: 0.5rem; display: block; margin: -2px; box-shadow: none"
+        src={`/images/Track/theme/${track.theme}.png`}
+        alt={track.theme}
+        width="28"
+        height="28"
+    /> -->
 </li>
 
 <style lang="scss">
@@ -65,6 +85,10 @@
         padding: 0;
         overflow: hidden;
         filter: grayscale(0.3) brightness(1);
+
+        *:not(a) {
+            pointer-events: none;
+        }
     }
 
     li:hover,
@@ -86,6 +110,16 @@
         display: block;
     }
 
+    .minimap {
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+        padding: 2rem;
+        filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+        opacity: 0.9;
+    }
+
     a {
         width: 100%;
         color: inherit;
@@ -99,7 +133,8 @@
             background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
         }
 
-        .absolute {
+        span.absolute {
+            z-index: 1;
             bottom: 0;
             left: 0;
             padding: 0.5em;
@@ -117,13 +152,20 @@
         }
     }
 
-    .top-left {
+    .track-metadata {
+        top: 0;
+        left: 0;
+        width: 100%;
         display: flex;
-        align-items: center;
-        gap: 0.25rem;
-        position: absolute;
-        top: 0.5rem;
-        left: 0.5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.5rem;
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
 
         img.license-level {
             width: 22px;
@@ -131,44 +173,13 @@
             filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
         }
 
-        .difficulty {
-            display: flex;
+        .right {
+            display: grid;
             gap: 0.25rem;
-            padding: 0.25rem;
-            border-radius: 3px;
-            background: rgba(34, 34, 34, 0.6);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-        }
 
-        .dot {
-            display: block;
-            height: 12px;
-            width: 12px;
-            background: #808080;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
-            border-radius: 50%;
-        }
-
-        .fill {
-            background: radial-gradient(
-                circle at top left,
-                #ffd42a,
-                var(--accent)
-            );
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7),
-                inset 0 1px 3px rgba(255, 187, 0, 0.5);
-        }
-    }
-
-    .top-right {
-        display: grid;
-        gap: 0.25rem;
-        position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
-
-        img {
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+            img {
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+            }
         }
     }
 </style>

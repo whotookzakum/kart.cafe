@@ -1,5 +1,6 @@
 {
     "id": "Ice_R04",
     "difficulty": 4,
-    "reqLicense": "L3"
+    "reqLicense": "L3",
+    "hasMinimap": true
 }

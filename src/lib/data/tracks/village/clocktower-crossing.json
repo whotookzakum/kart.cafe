@@ -2,5 +2,6 @@
     "id": "Village_I01",
     "difficulty": 2,
     "itemMode": true,
-    "reqLicense": "B2"
+    "reqLicense": "B2",
+    "hasMinimap": true
 }

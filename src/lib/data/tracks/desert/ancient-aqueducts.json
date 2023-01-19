@@ -1,5 +1,6 @@
 {
     "id": "Desert_R02",
     "difficulty": 4,
-    "reqLicense": "L3"
+    "reqLicense": "L3",
+    "hasMinimap": true
 }

@@ -2,5 +2,6 @@
     "id": "Forest_I04",
     "difficulty": 2,
     "itemMode": true,
-    "reqLicense": "B2"
+    "reqLicense": "B2",
+    "hasMinimap": true
 }
