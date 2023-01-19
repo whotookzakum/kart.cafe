@@ -1,7 +1,6 @@
 <script>
     import TrackItem from "$lib/components/TrackItem.svelte";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
-    import enUSLocale from "$lib/locale/en-US.json";
 
     export let data;
     const tracks = data.items;
@@ -11,10 +10,7 @@
     <h1>Tracks</h1>
     <ItemMenu itemWidth="240">
         {#each tracks as track}
-            <TrackItem
-                {track}
-                name={enUSLocale.String[`TrackName2_${track.id}`]}
-            />
+            <TrackItem {track} />
         {/each}
     </ItemMenu>
 </div>

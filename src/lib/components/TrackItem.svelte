@@ -1,18 +1,26 @@
 <script>
-    export let track, name;
+    import enUSLocale from "$lib/locale/en-US.json";
+    export let track;
 </script>
 
 <li class="box surface">
     <img
         class="bg"
         src={track.imgSrc}
-        alt={name}
+        alt={enUSLocale.String[`TrackName2_${track.id}`]}
         width="408"
         height="380"
         loading="lazy"
     />
     <a href={`/tracks/${track.id}`}>
-        <span>{name}</span>
+        <span class="absolute">
+            <span class="track-theme"
+                >{enUSLocale.String[`TrackThemeName_${track.theme}`]}</span
+            ><br />
+            <span class="track-name"
+                >{enUSLocale.String[`TrackName2_${track.id}`]}</span
+            >
+        </span>
     </a>
     {#if track.difficulty}
         <div class="top-left">
@@ -31,7 +39,7 @@
                 {/each}
             </div>
         </div>
-        <div class="modes">
+        <div class="top-right">
             <img
                 src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
                 alt="Speed mode"
@@ -57,18 +65,28 @@
         padding: 0;
         overflow: hidden;
         filter: grayscale(0.3) brightness(1);
+    }
 
-        &:hover, &:focus-within {
-            background: var(--surface2);
-            border-color: var(--surface3);
-            transform: translateY(-4px);
-            filter: grayscale(0) brightness(1);
-            // border-color: var(--accent);
+    li:hover,
+    li:focus-within {
+        background: var(--surface2);
+        border-color: var(--surface3);
+        transform: translateY(-4px);
+        filter: grayscale(0) brightness(1);
+        // border-color: var(--accent);
+
+        a .track-theme {
+            opacity: 1;
         }
     }
 
+    img.bg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
     a {
-        // display: block;
         width: 100%;
         color: inherit;
         border: none;
@@ -79,17 +97,23 @@
             inset: 0;
             position: absolute;
             background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-            // background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
         }
 
-        span {
-            position: absolute;
+        .absolute {
             bottom: 0;
             left: 0;
             padding: 0.5em;
             font-weight: 500;
             font-size: 1.13rem;
             text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .track-theme {
+            transition: all 0.1s linear;
+            color: var(--highlight);
+            opacity: 0;
+            font-size: 0.9rem;
+            font-style: normal;
         }
     }
 
@@ -100,26 +124,32 @@
         position: absolute;
         top: 0.5rem;
         left: 0.5rem;
-    }
 
-    .difficulty {
-        display: flex;
-        gap: 0.25rem;
-        padding: 0.25rem;
-        border-radius: 3px;
-        background: rgba(34, 34, 34, 0.6);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    }
+        img.license-level {
+            width: 22px;
+            height: auto;
+            filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
+        }
 
-    .dot {
-        display: block;
-        height: 12px;
-        width: 12px;
-        background: #808080;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
-        border-radius: 50%;
+        .difficulty {
+            display: flex;
+            gap: 0.25rem;
+            padding: 0.25rem;
+            border-radius: 3px;
+            background: rgba(34, 34, 34, 0.6);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
 
-        &.fill {
+        .dot {
+            display: block;
+            height: 12px;
+            width: 12px;
+            background: #808080;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+        }
+
+        .fill {
             background: radial-gradient(
                 circle at top left,
                 #ffd42a,
@@ -130,19 +160,7 @@
         }
     }
 
-    .license-level {
-        width: 22px;
-        height: auto;
-        filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4))
-    }
-
-    img.bg {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .modes {
+    .top-right {
         display: grid;
         gap: 0.25rem;
         position: absolute;

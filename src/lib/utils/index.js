@@ -50,10 +50,12 @@ export const fetchTracks = async () => {
   const allItems = await Promise.all(
     iterableItemFiles.map(async ([path, resolver]) => {
       const data = await resolver()
+      const theme = path.split("/")[5]
       // Add imgSrc for track based on id
       return {
         ...data.default,
-        imgSrc: `/images/Track/Loading/${data.default.id}.png`
+        imgSrc: `/images/Track/Loading/${data.default.id}.png`,
+        theme
       }
     })
   )

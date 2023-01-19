@@ -76,6 +76,10 @@ figure {
     }
 }
 
+.absolute {
+    position: absolute;
+}
+
 :root {
     --text1: hsl(0, 0%, 92%);
     --text2: hsl(219, 10%, 72%);
