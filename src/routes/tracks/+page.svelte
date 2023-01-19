@@ -8,7 +8,7 @@
 
 <div class="full-bleed grid">
     <h1>Tracks</h1>
-    <ItemMenu itemWidth="240">
+    <ItemMenu itemWidth="230">
         {#each tracks as track}
             <TrackItem {track} />
         {/each}
