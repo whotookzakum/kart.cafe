@@ -1,3 +1,5 @@
+import enUSLocale from "$lib/locale/en-US.json"
+
 export const fetchCharacters = async () => {
   const allCharacterFiles = import.meta.glob('/src/lib/data/characters/*.json')
   const iterableItemFiles = Object.entries(allCharacterFiles)
@@ -9,6 +11,7 @@ export const fetchCharacters = async () => {
       const costumes = data.default.costumes?.map(costume => {
         return { 
           ...costume, 
+          name: enUSLocale.String[`Item_Costume:${costume.id}_NAME`],
           imgSrc: `/images/ItemIcon/costume/Costume_${costume.id}.png` 
         }
       }) || []
@@ -16,6 +19,7 @@ export const fetchCharacters = async () => {
       // Add imgSrc for character based on id
       return { 
         ...data.default, 
+        name: enUSLocale.String[`Item_Character:${data.default.id}_NAME`],
         imgSrc: `/images/ItemIcon/character/Character_${data.default.id}.png`,
         costumes
       }
@@ -35,6 +39,7 @@ export const fetchKarts = async () => {
       // Add imgSrc for kart based on id
       return {
         ...data.default,
+        name: enUSLocale.String[`Item_Kart:${data.default.id}_NAME`],
         imgSrc: `/images/ItemIcon/kart/Kart_${data.default.id}.png`
       }
     })

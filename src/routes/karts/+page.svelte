@@ -1,6 +1,7 @@
 <script>
     import Item from "$lib/components/Item.svelte";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
+    import enUSLocale from "$lib/locale/en-US.json"
 
     export let data
     const karts = data.items
@@ -12,7 +13,7 @@
         {#each karts as kart}
             <Item
                 imgSrc={kart.imgSrc}
-                name={kart.name}
+                name={enUSLocale.String[`Item_Kart:${kart.id}_NAME`]}
                 href={`/karts/${kart.id}`}
             />
         {/each}
