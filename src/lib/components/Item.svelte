@@ -2,7 +2,7 @@
     export let imgSrc, name, href;
 </script>
 
-<li class="box surface">
+<li class="item box surface">
     <img src={imgSrc} alt={name} width="408" height="380" loading="lazy" />
     <a {href}>{name}</a>
 </li>
@@ -18,6 +18,11 @@
             border-color: var(--surface3);
             transform: translateY(-4px);
         }
+    }
+
+    :global(.surface .item.surface:hover) {
+        background: var(--surface3);
+        border-color: var(--surface4, hsl(219, 70%, 45%));
     }
 
     a {
