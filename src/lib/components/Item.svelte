@@ -2,7 +2,7 @@
     export let imgSrc, name, href;
 </script>
 
-<li class="box surface">
+<li class="item box surface">
     <img src={imgSrc} alt={name} width="408" height="380" loading="lazy" />
     <a {href}>{name}</a>
 </li>
@@ -12,21 +12,23 @@
         position: relative;
         text-align: center;
         transition: all 0.1s linear;
-        // padding: 0;
-        overflow: hidden;
 
         &:hover {
             background: var(--surface2);
             border-color: var(--surface3);
             transform: translateY(-4px);
-            // border-color: var(--accent);
         }
+    }
+
+    :global(.surface .item.surface:hover) {
+        background: var(--surface3);
+        border-color: var(--surface4, hsl(219, 70%, 45%));
     }
 
     a {
         color: inherit;
         border: none;
-        
+
         // Clickable everywhere
         &::before {
             content: "";
