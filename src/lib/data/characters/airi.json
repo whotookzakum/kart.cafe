@@ -3,13 +3,11 @@
   "costumes": [
     {
       "id": 217000001,
-      "imgSrc": "/images/ItemIcon/costume/Costume_217000001.png",
-      "rarity": 0
+      "rarity": 1
     },
     {
       "id": 217000005,
-      "imgSrc": "/images/ItemIcon/costume/Costume_217000005.png",
-      "rarity": 0
+      "rarity": 2
     }
   ]
 }
