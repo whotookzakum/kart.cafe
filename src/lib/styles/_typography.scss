@@ -1,0 +1,48 @@
+body {
+    color: var(--text1);
+    font-family: "Asap", "Poppins", system-ui, sans-serif;
+    font-weight: 200;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    width: fit-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 600;
+}
+
+h3, h2 {
+    margin: 0;
+}
+
+h2, h1 {
+    margin-bottom: 0;
+}
+
+h1, h2:not(:first-of-type) {
+    margin-top: 4rem;
+}
+
+figure {
+    margin: 0;
+    
+    figcaption {
+        text-align: center;
+        color: var(--highlight);
+        font-size: 0.9rem;
+    }
+}
