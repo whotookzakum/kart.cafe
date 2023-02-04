@@ -10,7 +10,7 @@
 <Modal>
     <div class="grid outer-grid">
         <section class="grid" id="model">
-            <h2 style="grid-column: 1/-1">{data.name}</h2>
+            <h2 style="grid-column: 1/-1">{data.name}</h2> 
             <ModelViewer poster={data.imgSrc} modelSrc="boz" />
         </section>
 

@@ -4,7 +4,7 @@
     export let track;
 </script>
 
-<li class="box surface">
+<li class="box surface hover">
     <img
         class="bg"
         src={track.imgSrc}
@@ -93,8 +93,6 @@
 
     li:hover,
     li:focus-within {
-        background: var(--surface2);
-        border-color: var(--surface3);
         transform: translateY(-4px);
         filter: grayscale(0) brightness(1);
         // border-color: var(--accent);

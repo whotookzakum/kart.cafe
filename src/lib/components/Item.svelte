@@ -2,8 +2,8 @@
     export let imgSrc, name, href;
 </script>
 
-<li class="item box surface">
-    <img src={imgSrc} alt={name} width="408" height="380" loading="lazy" />
+<li class="item box surface hover">
+    <img src={imgSrc} alt="" width="408" height="380" loading="lazy" />
     <a {href}>{name}</a>
 </li>
 
@@ -13,9 +13,7 @@
         text-align: center;
         transition: all 0.1s linear;
 
-        &:hover {
-            background: var(--surface2);
-            border-color: var(--surface3);
+        &:hover, &:focus-within {
             transform: translateY(-4px);
         }
     }

@@ -25,9 +25,19 @@ body {
     background: var(--surface1);
     // background: linear-gradient(155deg, var(--surface2), var(--surface1) 60%);
 
+    &.hover:hover, &.hover:focus-visible {
+        background: var(--surface2);
+        border-color: var(--surface3);
+    }
+
     .surface {
         background: var(--surface2);
         border-color: var(--surface3);
+
+        &.hover:hover, &.hover:focus-visible {
+            background: var(--surface3);
+            border-color: var(--surface4);
+        }
 
         .surface {
             background: var(--surface3);
