@@ -1,53 +1,13 @@
+@import './typography';
+@import './colors';
+
 body {
     margin: 0;
     background: var(--bg);
-    color: var(--text1);
-    font-family: "Asap", "Poppins", system-ui, sans-serif;
 }
 
 * {
     box-sizing: border-box;
-}
-
-// TODO: typography and colors
-
-a {
-    text-decoration: none;
-    color: var(--accent);
-    border-bottom: 1px solid var(--accent);
-    width: fit-content;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-    font-weight: 600;
-}
-
-h3, h2 {
-    margin: 0;
-}
-
-h2, h1 {
-    margin-bottom: 0;
-}
-
-h1, h2:not(:first-of-type) {
-    margin-top: 4rem;
-}
-
-figure {
-    margin: 0;
-    
-    figcaption {
-        text-align: center;
-        color: var(--highlight);
-        font-size: 0.9rem;
-    }
 }
 
 .grid {
@@ -65,9 +25,19 @@ figure {
     background: var(--surface1);
     // background: linear-gradient(155deg, var(--surface2), var(--surface1) 60%);
 
+    &.hover:hover, &.hover:focus-visible {
+        background: var(--surface2);
+        border-color: var(--surface3);
+    }
+
     .surface {
         background: var(--surface2);
         border-color: var(--surface3);
+
+        &.hover:hover, &.hover:focus-visible {
+            background: var(--surface3);
+            border-color: var(--surface4);
+        }
 
         .surface {
             background: var(--surface3);
@@ -78,19 +48,4 @@ figure {
 
 .absolute {
     position: absolute;
-}
-
-:root {
-    --text1: hsl(0, 0%, 92%);
-    --text2: hsl(219, 10%, 72%);
-    --bg: hsl(219, 70%, 18%);
-    --accent: orange;
-    --highlight: skyblue;
-    --surface1: hsl(219, 70%, 23%);
-    --surface2: hsl(219, 70%, 28%);
-    --surface3: hsl(219, 70%, 35%);
-    --surface-shadow: rgba(0, 0, 0, 0.17);
-    --rarity-1: #737790;
-    --rarity-2: #5bb800;
-    --rarity-3: #0072ff;
 }

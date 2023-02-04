@@ -1,0 +1,69 @@
+body {
+    color: var(--text1);
+    font-family: "Asap", "Poppins", system-ui, sans-serif;
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    width: fit-content;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 7px;
+    transition: all 0.2s ease;
+
+    &.box.surface {
+        padding: 0.5rem 1rem !important;
+        background: hsl(39, 100%, 40%) !important;
+        border-color: var(--accent) !important;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 500;
+}
+
+h3,
+h2 {
+    margin: 0;
+}
+
+h2,
+h1 {
+    margin-bottom: 0;
+}
+
+h1,
+h2:not(:first-of-type) {
+    margin-top: 4rem;
+}
+
+figure {
+    margin: 0;
+
+    figcaption {
+        text-align: center;
+        color: var(--highlight);
+        font-size: 0.9rem;
+    }
+}
