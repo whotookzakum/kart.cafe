@@ -5,18 +5,36 @@
     import ModelViewer from "../../../lib/components/ModelViewer.svelte";
 
     export let data;
+
+    let emotesType = 1;
+
+    $: emotes = data.emotes.filter(e => e.type === emotesType)
+
 </script>
 
 <Modal>
     <div class="grid outer-grid">
         <section class="grid" id="model">
-            <h2 style="grid-column: 1/-1">{data.name}</h2> 
+            <h2>{data.name}</h2> 
             <ModelViewer poster={data.imgSrc} modelSrc="boz" />
         </section>
 
         <section class="grid" id="emotes">
             <h3>Emotes</h3>
-            <div class="box surface"></div>
+            <div>
+                <label>
+                    <input type="radio" bind:group={emotesType} value={1} checked> Standing
+                </label>
+                <label>
+                    <input type="radio" bind:group={emotesType} value={2}> Sitting
+                </label>
+
+                <ItemMenu itemWidth="96">
+                    {#each emotes as emote}
+                        <Item imgSrc={emote.imgSrc} name={emote.name} />
+                    {/each}
+                </ItemMenu>
+            </div>
         </section>
 
         {#if data.costumes.length > 0}
