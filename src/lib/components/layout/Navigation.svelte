@@ -21,7 +21,7 @@
     </div>
     <div class="timer-wrapper grid">
         <span>Time until reset</span>
-        <strong><TimeUntilReset /></strong>
+        <TimeUntilReset />
     </div>
 </nav>
 
