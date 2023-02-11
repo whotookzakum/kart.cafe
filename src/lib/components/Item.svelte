@@ -2,7 +2,7 @@
     export let imgSrc, name, href;
 </script>
 
-<li class="item box surface hover">
+<li class="item box surface hover focus-within-outline">
     <img src={imgSrc} alt="" width="408" height="380" loading="lazy" />
     <a {href}>{name}</a>
 </li>
@@ -11,15 +11,11 @@
     li {
         position: relative;
         text-align: center;
-        transition: transform 0.1s linear;
+        transition: transform 0.1s linear, border 0.1s linear, background-color 0.1s linear;
         overflow: hidden;
 
         &:hover, &:focus-within {
             transform: translateY(-4px);
-        }
-
-        &:focus-within {
-            outline: 2px solid var(--accent); // or var(--highlight);
         }
     }
 
