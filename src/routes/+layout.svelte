@@ -9,6 +9,7 @@
     <slot/>
     <PageFooter />
 </main>
+<img class="bg-img" src="/images/CustomGame_ModeSelect_Squad_Highlight.png" alt="" width="550" height="300" loading="lazy">
 
 <style global lang="scss">
     main {
@@ -29,5 +30,15 @@
         // & > .box {
         //     margin-inline: -1rem;
         // }
+    }
+
+    .bg-img {
+        position: fixed;
+        z-index: -1;
+        bottom: 0;
+        right: -100px;
+        user-select: none;
+        pointer-events: none;
+        opacity: 0.25;
     }
 </style>
