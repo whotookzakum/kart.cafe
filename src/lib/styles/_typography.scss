@@ -17,7 +17,7 @@ a {
 
 button {
     cursor: pointer;
-    font-family: inherit;
+    font: inherit;
     color: inherit;
     border-radius: 7px;
     transition: all 0.2s ease;
@@ -67,4 +67,25 @@ figure {
         font-size: 0.9rem;
         margin-top: 0.5rem;
     }
+}
+
+select.surface {
+    padding: 0.5rem;
+    font: inherit;
+    font-size: 1rem;
+    color: var(--text1);
+
+    &:disabled {
+        filter: saturate(0.3);
+        color: var(--text2);
+    }
+}
+
+optgroup {
+    font-style: normal;
+    color: var(--highlight);
+}
+
+option {
+    color: var(--text1);
 }

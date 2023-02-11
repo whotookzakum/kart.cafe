@@ -17,12 +17,15 @@ export const fetchCharacters = async () => {
       }) || []
 
       // Add imgSrc for each costume based on id
-      const emotes = data.default.emotes?.map(emote => {
-        return { 
-          ...emote, 
-          name: enUSLocale.String[`Item_Motion:${emote.id}_NAME`]
-        }
-      }) || []
+      let emotes = {}
+      for (const key in data.default.emotes) {
+        emotes[key] = data.default.emotes[key]?.map(emote => {
+          return { 
+            ...emote, 
+            name: enUSLocale.String[`Item_Motion:${emote.id}_NAME`]
+          }
+        })
+      }
 
       // Add imgSrc for character based on id
       return { 

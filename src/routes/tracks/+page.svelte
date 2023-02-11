@@ -29,9 +29,10 @@
 
 </script>
 
-<div>
+<div class="box surface">
+    <h2>Filters</h2>
     <button class="box surface" on:click={resetFilters}>Reset</button>
-    <select name="" id="" bind:value={activeFilters.theme}>
+    <select class="surface box" name="" id="" bind:value={activeFilters.theme}>
         <option value="All">All</option>
         {#each _.uniqBy(data.items, (t) => t.theme).map((t) => t.theme) as theme}
             <option value={theme}>{theme}</option>
