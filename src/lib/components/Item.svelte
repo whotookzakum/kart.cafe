@@ -11,27 +11,33 @@
     li {
         position: relative;
         text-align: center;
-        transition: all 0.1s linear;
+        transition: transform 0.1s linear;
+        overflow: hidden;
 
         &:hover, &:focus-within {
             transform: translateY(-4px);
         }
-    }
 
-    :global(.surface .item.surface:hover) {
-        background: var(--surface3);
-        border-color: var(--surface4, hsl(219, 70%, 45%));
+        &:focus-within {
+            outline: 2px solid var(--accent);
+        }
     }
 
     a {
         color: inherit;
         border: none;
+        outline: none;
 
         // Clickable everywhere
-        &::before {
+        &::before, &::after {
             content: "";
             inset: 0;
             position: absolute;
+        }
+
+        &::after {
+            z-index: -1;
+            transition: all 0.1s linear;
         }
     }
 
