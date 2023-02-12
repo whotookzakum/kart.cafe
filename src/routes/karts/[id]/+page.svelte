@@ -25,8 +25,4 @@
         width: 100%;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-
-    #costumes {
-        grid-column: 1/-1;
-    }
 </style>
