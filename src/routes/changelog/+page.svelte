@@ -7,7 +7,7 @@
     let container;
 
     onMount(() => {
-        const elements = document.querySelectorAll("h2, h2~*:not(footer)");
+        const elements = document.querySelectorAll(".visually-hidden h2, .visually-hidden h2~*");
 
         // Group every H2 with its subsequent contents
         elements.forEach((el) => {
@@ -36,14 +36,3 @@
 <div class="visually-hidden">
     <svelte:component this={data.content} />
 </div>
-
-<style lang="scss" global>
-    #changelog {
-        gap: 1rem;
-
-        h2 {
-            margin: 0;
-            font-size: 1.17rem;
-        }
-    }
-</style>

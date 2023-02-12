@@ -85,3 +85,13 @@ body {
 .hover-outline:hover {
     outline: 2px solid var(--accent); // or var(--highlight);
 }
+
+#changelog {
+    gap: 1rem;
+
+    h2, h3 {
+        margin: 0;
+        font-size: 1.17rem;
+        color: var(--highlight);
+    }
+}
