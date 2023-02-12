@@ -28,4 +28,10 @@
     setInterval(updateTimer, 1000);
 </script>
 
-<strong>{countdown}</strong>
+<time>{countdown}</time>
+
+<style>
+    time {
+        font-weight: 500;
+    }
+</style>

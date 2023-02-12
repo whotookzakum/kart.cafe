@@ -14,12 +14,8 @@
         loading="lazy"
     />
     <a href={`/tracks/${track.id}`}>
-        <span class="track-theme"
-            >{enUSLocale.String[`TrackThemeName_${track.theme}`]}</span
-        >
-        <span class="track-name"
-            >{enUSLocale.String[`TrackName2_${track.id}`]}</span
-        >
+        <span class="track-theme">{track.theme}</span>
+        <span class="track-name">{track.name}</span>
     </a>
     {#if track.hasMinimap}
         <img
@@ -101,6 +97,7 @@
         height: auto;
         display: block;
         mask-image: linear-gradient(black, rgba(0, 0, 0, 0.2));
+        -webkit-mask-image: linear-gradient(black, rgba(0, 0, 0, 0.2));
         filter: grayscale(0.45) brightness(0.9);
         transition: filter 0.1s linear;
     }
@@ -146,7 +143,6 @@
         justify-content: space-between;
         align-items: flex-start;
         padding: 0.5rem;
-        
 
         .left {
             display: flex;

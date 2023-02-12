@@ -2,6 +2,7 @@
     import Item from "$lib/components/Item.svelte";
     import ItemMenu from "$lib/components/ItemMenu.svelte";
     import { fetchCharacters } from "$lib/utils";
+    import MetaTags from "$lib/components/MetaTags.svelte";
     import { page } from "$app/stores";
     import { onMount } from "svelte";
     
@@ -19,7 +20,10 @@
     // });
 </script>
 
-
+<MetaTags
+    title="Characters"
+    description="All the characters in KartRider: Drift! View their cosmetics and animations."
+/>
 <slot />
 
 <div class="full-bleed grid">

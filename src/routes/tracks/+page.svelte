@@ -123,7 +123,4 @@
     .grid {
         gap: 1rem;
     }
-
-    input:checked {
-    }
 </style>

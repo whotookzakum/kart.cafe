@@ -20,7 +20,7 @@
 <YouTube
     id="wLZNerE4Vs8"
     title="Drift Tutorial: How to drift"
-    caption="In this weeks video, donutKR teaches us the basics of drifting techniques."
+    caption="donutKR teaches us the basics of drifting techniques."
 />
 
 <h2>What's New</h2>

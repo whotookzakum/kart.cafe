@@ -1,16 +1,32 @@
 <script>
-    import enUSLocale from "$lib/locale/en-US.json"
+    import Modal from "$lib/components/layout/Modal.svelte";
+    import ModelViewer from "$lib/components/ModelViewer.svelte";
 
     export let data;
 </script>
 
-<div class="full-bleed grid">
-    <h1>{enUSLocale.String[`Item_Kart:${data.id}_NAME`]}</h1>
-    <img src={data.imgSrc} alt="" width="408" height="380" loading="lazy" />
-</div>
+<Modal>
+    <div class="grid outer-grid">
+        <section class="grid" id="model">
+            <h2>{data.name}</h2>
+            <ModelViewer poster={data.imgSrc} modelSrc="boz" />
+        </section>
+        <section />
+    </div>
+</Modal>
 
-<style>
+<style lang="scss">
     .grid {
-        gap: 1rem;
+        gap: 1rem 2rem;
+        align-content: flex-start;
+    }
+
+    .outer-grid {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    #costumes {
+        grid-column: 1/-1;
     }
 </style>

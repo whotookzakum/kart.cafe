@@ -1,6 +1,10 @@
+<script>
+    import { page } from "$app/stores";
+</script>
+
 <div class="modal grid absolute">
     <div class="modal-contents box surface">
-        <a href="/characters" aria-label="Close details">X</a>
+        <a href={'/' + $page.url.pathname.split("/")[1]} aria-label="Close details">X</a>
         <slot />
     </div>
 </div>

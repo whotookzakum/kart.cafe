@@ -7,7 +7,7 @@
         <img src="/images/boz.png" alt="" height="72" />
         <div class="grid">
             <span>Kart</span>
-            <strong>Cafe</strong>
+            <strong>Cafe <span class="beta-mark">BETA</span></strong>
         </div>
     </a>
     <div class="links">
@@ -40,6 +40,13 @@
         overflow: hidden;
         line-height: 1.1;
         border-radius: 0;
+    }
+
+    .beta-mark {
+        font-weight: 600;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.438);
+        color: var(--highlight);
+        font-size: 0.9rem;
     }
 
     .logo-wrapper,
