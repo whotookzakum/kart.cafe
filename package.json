@@ -19,6 +19,8 @@
 	"type": "module",
 	"dependencies": {
 		"lodash": "^4.17.21",
+		"mdsvex": "^0.10.6",
+		"remark-containers": "^1.2.0",
 		"sass": "^1.57.1",
 		"svelte-preprocess": "^5.0.0"
 	}
