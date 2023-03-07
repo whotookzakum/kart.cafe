@@ -1,18 +1,32 @@
 <script>
     import { browser } from "$app/environment";
-    export let modelSrc, poster;
+    export let poster;
 
-    if (browser) {
-        // document
-        // .querySelector("#button-load")
-        // .addEventListener("click", () =>
-        //     document.querySelector("#lazy-load").dismissPoster()
-        // );
-    }
     let modelViewer;
 
     function handleClick() {
         modelViewer.dismissPoster();
+    }
+
+    function handleLoad() {
+        const material = modelViewer.model.materials[7];
+        
+        const createAndApplyTexture = async (channel, texSrc) => {
+            const texture = await modelViewer.createTexture(texSrc);
+            if (channel.includes("base") || channel.includes("metallic")) {
+                material.pbrMetallicRoughness[channel].setTexture(texture);
+            } else {
+                material[channel].setTexture(texture);
+            }
+        };
+
+        createAndApplyTexture("baseColorTexture", "/ART/Character/Bazzi/Costume/Default/Tex_Bazzi_Bag_D.png");
+        // createAndApplyTexture("metallicRoughnessTexture", "/ART/Character/Bazzi/Costume/Default/Tex_Bazzi_Bag_MT.png");
+        // createAndApplyTexture("normalTexture", "/ART/Character/Bazzi/Costume/Default/Tex_Bazzi_Bag_N.png");
+        // createAndApplyTexture("occlusionTexture", "/ART/Character/Bazzi/Costume/Default/Tex_Bazzi_Bag_D.png");
+        // createAndApplyTexture("emissiveTexture", "/ART/Character/Bazzi/Costume/Default/Tex_Bazzi_Bag_D.png");
+        
+        
     }
 </script>
 
@@ -26,9 +40,10 @@
 <model-viewer
     id="model-viewer"
     bind:this={modelViewer}
+    on:load={handleLoad}
     class="box surface"
     alt=""
-    src={`/${modelSrc}.glb`}
+    src={`/ART/Character/Bazzi/Costume/Default/Mesh_Bazzi.gltf`}
     ar
     reveal="manual"
     shadow-intensity="1"
@@ -36,7 +51,11 @@
     touch-action="pan-y"
 >
     <div id="poster-content" slot="poster">
-        <div id="lazy-load-poster" slot="poster" style={`background-image: url(${poster})`} />
+        <div
+            id="lazy-load-poster"
+            slot="poster"
+            style={`background-image: url(${poster})`}
+        />
         <button
             id="button-load"
             class="box surface hover"
@@ -45,6 +64,90 @@
         >
     </div>
 </model-viewer>
+
+<div class="controls">
+    <div>
+        <p>Diffuse</p>
+        <select id="diffuse">
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/Default_albedo.jpg"
+                >Damaged helmet</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/Lantern/glTF/Lantern_baseColor.png"
+                >Lantern Pole</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/WaterBottle/glTF/WaterBottle_baseColor.png"
+                >Water Bottle</option
+            >
+        </select>
+    </div>
+    <div>
+        <p>Metallic-roughness</p>
+        <select id="metallicRoughness">
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/Default_metalRoughness.jpg"
+                >Damaged helmet</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/Lantern/glTF/Lantern_roughnessMetallic.png"
+                >Lantern Pole</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/WaterBottle/glTF/WaterBottle_occlusionRoughnessMetallic.png"
+                >Water Bottle</option
+            >
+        </select>
+    </div>
+    <div>
+        <p>Normals</p>
+        <select id="normals">
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/Default_normal.jpg"
+                >Damaged helmet</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/Lantern/glTF/Lantern_normal.png"
+                >Lantern Pole</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/WaterBottle/glTF/WaterBottle_normal.png"
+                >Water Bottle</option
+            >
+        </select>
+    </div>
+    <div>
+        <p>Occlusion</p>
+        <select id="occlusion">
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/Default_AO.jpg"
+                >Damaged helmet</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/WaterBottle/glTF/WaterBottle_occlusionRoughnessMetallic.png"
+                >Water Bottle</option
+            >
+        </select>
+    </div>
+    <div>
+        <p>Emission</p>
+        <select id="emission">
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/Default_emissive.jpg"
+                >Damaged helmet</option
+            >
+            <option
+                value="../../shared-assets/models/glTF-Sample-Models/2.0/Lantern/glTF/Lantern_emissive.png"
+                >Lantern Pole</option
+            >
+            <option
+                value="/ART/Character/Bazzi/Costume/Default/Tex_Bazzi_Bag_D.png"
+                >Water Bottle</option
+            >
+        </select>
+    </div>
+</div>
 
 <style lang="scss">
     #model-viewer {
