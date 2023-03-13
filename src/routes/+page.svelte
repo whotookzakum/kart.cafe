@@ -2,13 +2,19 @@
     import MetaTags from "$lib/components/MetaTags.svelte";
     import { onMount } from "svelte";
     import YouTube from "../lib/components/YouTube.svelte";
+    import { fetchTracks } from "$lib/utils";
     export let data;
 
     const stuff = [];
     let group = [];
     let container;
 
-    onMount(() => {
+    onMount(async () => {
+        const hello = await fetchTracks();
+
+        console.log(hello)
+
+
         const elements = document.querySelectorAll(
             ".visually-hidden h2, .visually-hidden h2~*"
         );
@@ -35,6 +41,8 @@
             }
         }
     });
+
+    let searchCategory = "karts";
 </script>
 
 <MetaTags
@@ -43,6 +51,28 @@
 />
 
 <h1>Welcome to Kart Cafe!</h1>
+<input class="box surface" type="text" name="" id="" placeholder={`Search ${searchCategory}`}>
+<div class="flex g-50 wrap">
+    <label>
+        <input type="radio" name="searchCategory" value="karts" bind:group={searchCategory}>
+        <span>Karts</span>
+    </label>
+    
+    <label>
+        <input type="radio" name="searchCategory" value="characters" bind:group={searchCategory}>
+        <span>Characters</span>
+    </label>
+    
+    <label>
+        <input type="radio" name="searchCategory" value="accessories" bind:group={searchCategory}>
+        <span>Accessories</span>
+    </label>
+    
+    <label>
+        <input type="radio" name="searchCategory" value="tracks" bind:group={searchCategory}>
+        <span>Tracks</span>
+    </label>
+</div>
 
 <h2>Featured Video</h2>
 <YouTube
@@ -60,3 +90,10 @@
 <div class="visually-hidden">
     <svelte:component this={data.content} />
 </div>
+
+<style lang="scss">
+    input[type="text"].surface {
+        color: var(--text1);
+        font: inherit;
+    }
+</style>

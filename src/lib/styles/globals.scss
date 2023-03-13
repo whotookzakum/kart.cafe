@@ -19,6 +19,22 @@ body {
     display: grid;
 }
 
+.flex {
+    display: flex;
+}
+
+.g-50 {
+    gap: 0.5rem;
+}
+
+.g-25 {
+    gap: 0.25rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
 .box {
     border: 1px solid var(--surface2);
     box-shadow: 0 2px 4px var(--surface-shadow);
