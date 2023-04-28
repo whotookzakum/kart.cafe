@@ -1,6 +1,6 @@
 <script>
     import { browser } from "$app/environment";
-    export let poster;
+    export let poster, src;
 
     let modelViewer;
 
@@ -43,7 +43,7 @@
     on:load={handleLoad}
     class="box surface"
     alt=""
-    src={`/ART/Character/Bazzi/Costume/Default/Mesh_Bazzi.gltf`}
+    {src}
     ar
     reveal="manual"
     shadow-intensity="1"
@@ -65,7 +65,7 @@
     </div>
 </model-viewer>
 
-<div class="controls">
+<!-- <div class="controls">
     <div>
         <p>Diffuse</p>
         <select id="diffuse">
@@ -147,7 +147,7 @@
             >
         </select>
     </div>
-</div>
+</div> -->
 
 <style lang="scss">
     #model-viewer {

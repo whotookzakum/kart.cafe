@@ -1,10 +1,10 @@
 <script>
-    export let imgSrc, name, href;
+    export let item;
 </script>
 
 <li class="item box surface hover focus-within-outline">
-    <img src={imgSrc} alt="" width="408" height="380" loading="lazy" />
-    <a {href}>{name}</a>
+    <img src={item.imgSrc} alt="" width="408" height="380" loading="lazy" />
+    <a href={item.href}>{item.name}</a>
 </li>
 
 <style lang="scss">
