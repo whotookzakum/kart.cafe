@@ -1,8 +1,11 @@
 <script>
+    import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/layout/Navigation.svelte";
     import PageFooter from "$lib/components/layout/PageFooter.svelte";
 </script>
+
+<GoogleAnalytics properties={['G-B4YBFZGNVP']} />
 
 <Navigation />
 <main>
