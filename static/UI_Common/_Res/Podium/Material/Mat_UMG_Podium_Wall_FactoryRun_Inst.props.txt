@@ -1,0 +1,380 @@
+Parent = Material3'/Game/UI_Common/_Res/Podium/Material/Mat_UMG_Podium_Wall_FactoryRun.Mat_UMG_Podium_Wall_FactoryRun'
+ScalarParameterValues[38] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterInfo = { Name=Pase A B Switch }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[1] =
+    {
+        ParameterInfo = { Name=Back Mask Range }
+        ParameterValue = 0.721048
+        ParameterName = None
+    }
+    ScalarParameterValues[2] =
+    {
+        ParameterInfo = { Name=Back Mask Speed }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[3] =
+    {
+        ParameterInfo = { Name=PT B Offset }
+        ParameterValue = 0
+        ParameterName = None
+    }
+    ScalarParameterValues[4] =
+    {
+        ParameterInfo = { Name=PT B Time Speed }
+        ParameterValue = 0.2
+        ParameterName = None
+    }
+    ScalarParameterValues[5] =
+    {
+        ParameterInfo = { Name=Tran Mask Range }
+        ParameterValue = 0.02
+        ParameterName = None
+    }
+    ScalarParameterValues[6] =
+    {
+        ParameterInfo = { Name=Tran Seed }
+        ParameterValue = 0.5
+        ParameterName = None
+    }
+    ScalarParameterValues[7] =
+    {
+        ParameterInfo = { Name=Tran Speed }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[8] =
+    {
+        ParameterInfo = { Name=Tran Hue }
+        ParameterValue = 0
+        ParameterName = None
+    }
+    ScalarParameterValues[9] =
+    {
+        ParameterInfo = { Name=Logo Make Rnage }
+        ParameterValue = 0.75
+        ParameterName = None
+    }
+    ScalarParameterValues[10] =
+    {
+        ParameterInfo = { Name=Logo Scale }
+        ParameterValue = 2.58179
+        ParameterName = None
+    }
+    ScalarParameterValues[11] =
+    {
+        ParameterInfo = { Name=Logo Dist }
+        ParameterValue = 0.05
+        ParameterName = None
+    }
+    ScalarParameterValues[12] =
+    {
+        ParameterInfo = { Name=Logo Space }
+        ParameterValue = 0.02
+        ParameterName = None
+    }
+    ScalarParameterValues[13] =
+    {
+        ParameterInfo = { Name=Logo Offset X }
+        ParameterValue = 0
+        ParameterName = None
+    }
+    ScalarParameterValues[14] =
+    {
+        ParameterInfo = { Name=Logo Offset Y }
+        ParameterValue = 0.07
+        ParameterName = None
+    }
+    ScalarParameterValues[15] =
+    {
+        ParameterInfo = { Name=Logo Dist Speed }
+        ParameterValue = 1.3
+        ParameterName = None
+    }
+    ScalarParameterValues[16] =
+    {
+        ParameterInfo = { Name=PT C Range }
+        ParameterValue = 0.638093
+        ParameterName = None
+    }
+    ScalarParameterValues[17] =
+    {
+        ParameterInfo = { Name=PC C Remap Min }
+        ParameterValue = 0.01
+        ParameterName = None
+    }
+    ScalarParameterValues[18] =
+    {
+        ParameterInfo = { Name=PC C Remap Max }
+        ParameterValue = 0.161903
+        ParameterName = None
+    }
+    ScalarParameterValues[19] =
+    {
+        ParameterInfo = { Name=PT C 01 STR }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[20] =
+    {
+        ParameterInfo = { Name=PT C 02 STR }
+        ParameterValue = 1.59115
+        ParameterName = None
+    }
+    ScalarParameterValues[21] =
+    {
+        ParameterInfo = { Name=PT C Sphere STR }
+        ParameterValue = 1.20527
+        ParameterName = None
+    }
+    ScalarParameterValues[22] =
+    {
+        ParameterInfo = { Name=PT C Spher Radius }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[23] =
+    {
+        ParameterInfo = { Name=PT C Pixlelize }
+        ParameterValue = 21.5883
+        ParameterName = None
+    }
+    ScalarParameterValues[24] =
+    {
+        ParameterInfo = { Name=PT C Blend }
+        ParameterValue = -0.040476
+        ParameterName = None
+    }
+    ScalarParameterValues[25] =
+    {
+        ParameterInfo = { Name=PT D 01 STR }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[26] =
+    {
+        ParameterInfo = { Name=PT D 02 STR }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[27] =
+    {
+        ParameterInfo = { Name=PT D Sphere STR }
+        ParameterValue = -1
+        ParameterName = None
+    }
+    ScalarParameterValues[28] =
+    {
+        ParameterInfo = { Name=PT D Min }
+        ParameterValue = 0.61
+        ParameterName = None
+    }
+    ScalarParameterValues[29] =
+    {
+        ParameterInfo = { Name=PT D Min Add }
+        ParameterValue = 0.2
+        ParameterName = None
+    }
+    ScalarParameterValues[30] =
+    {
+        ParameterInfo = { Name=PT D Opacity }
+        ParameterValue = 0.5
+        ParameterName = None
+    }
+    ScalarParameterValues[31] =
+    {
+        ParameterInfo = { Name=PT D Spher Radius }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[32] =
+    {
+        ParameterInfo = { Name=Dot Count }
+        ParameterValue = 280
+        ParameterName = None
+    }
+    ScalarParameterValues[33] =
+    {
+        ParameterInfo = { Name=Dot Opacity }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[34] =
+    {
+        ParameterInfo = { Name=Dot Blend }
+        ParameterValue = 1.3
+        ParameterName = None
+    }
+    ScalarParameterValues[35] =
+    {
+        ParameterInfo = { Name=PT C Color }
+        ParameterValue = 3
+        ParameterName = None
+    }
+    ScalarParameterValues[36] =
+    {
+        ParameterInfo = { Name=PT D Color }
+        ParameterValue = 4
+        ParameterName = None
+    }
+    ScalarParameterValues[37] =
+    {
+        ParameterInfo = { Name=RefractionDepthBias }
+        ParameterValue = 0
+        ParameterName = None
+    }
+}
+TextureParameterValues[3] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterInfo = { Name=Tex Logo }
+        ParameterValue = Texture2D'/Game/UI_Common/_Res/Podium/Texture/T_Podium_Factoryrun_Logo.T_Podium_Factoryrun_Logo'
+        ParameterName = None
+    }
+    TextureParameterValues[1] =
+    {
+        ParameterInfo = { Name=Tex PT A }
+        ParameterValue = Texture2D'/Game/UI_Common/_Res/Podium/Texture/T_Podium_Factoryrun_PT_001.T_Podium_Factoryrun_PT_001'
+        ParameterName = None
+    }
+    TextureParameterValues[2] =
+    {
+        ParameterInfo = { Name=Tex PT B }
+        ParameterValue = Texture2D'/Game/UI_Common/_Res/Podium/Texture/T_Podium_Factoryrun_PT_002.T_Podium_Factoryrun_PT_002'
+        ParameterName = None
+    }
+}
+VectorParameterValues[14] =
+{
+    VectorParameterValues[0] =
+    {
+        ParameterInfo = { Name=Back Color A }
+        ParameterValue = { R=0.006995, G=0.007499, B=0.014444, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[1] =
+    {
+        ParameterInfo = { Name=Back Color B }
+        ParameterValue = { R=0.009721, G=0.01033, B=0.015209, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[2] =
+    {
+        ParameterInfo = { Name=PT A Color }
+        ParameterValue = { R=0, G=0.166667, B=0, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[3] =
+    {
+        ParameterInfo = { Name=PT B Color }
+        ParameterValue = { R=0, G=0.160977, B=0.192708, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[4] =
+    {
+        ParameterInfo = { Name=Tran Color }
+        ParameterValue = { R=0.332829, G=0.048882, B=0.552083, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[5] =
+    {
+        ParameterInfo = { Name=Color Logo A Back 01 }
+        ParameterValue = { R=1, G=0.797621, B=0.083333, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[6] =
+    {
+        ParameterInfo = { Name=Color Logo A Back 02 }
+        ParameterValue = { R=0.046665, G=0.099899, B=1, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[7] =
+    {
+        ParameterInfo = { Name=Color Logo A Back Main }
+        ParameterValue = { R=0.806952, G=0.066626, B=0.168269, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[8] =
+    {
+        ParameterInfo = { Name=PT C 01 Transfom }
+        ParameterValue = { R=1, G=1, B=0, A=0.561905 }
+        ParameterName = None
+    }
+    VectorParameterValues[9] =
+    {
+        ParameterInfo = { Name=PT C 02 Transfom }
+        ParameterValue = { R=0.950931, G=0.618866, B=-0.038096, A=0 }
+        ParameterName = None
+    }
+    VectorParameterValues[10] =
+    {
+        ParameterInfo = { Name=PT C Sphere Transfom }
+        ParameterValue = { R=1, G=1.3546, B=0, A=0 }
+        ParameterName = None
+    }
+    VectorParameterValues[11] =
+    {
+        ParameterInfo = { Name=PT D 01 Transfom }
+        ParameterValue = { R=1.59138, G=1.42923, B=0, A=-0.228571 }
+        ParameterName = None
+    }
+    VectorParameterValues[12] =
+    {
+        ParameterInfo = { Name=PT D 02 Transfom }
+        ParameterValue = { R=1, G=0.340908, B=0, A=0 }
+        ParameterName = None
+    }
+    VectorParameterValues[13] =
+    {
+        ParameterInfo = { Name=PT D Sphere Transfom }
+        ParameterValue = { R=1, G=1, B=0, A=0 }
+        ParameterName = None
+    }
+}
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = false
+    BlendMode = BLEND_Translucent (2)
+    bOverride_TwoSided = false
+    TwoSided = false
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+StaticParameters =
+{
+    StaticSwitchParameters[0] = {}
+    StaticComponentMaskParameters[0] = {}
+    TerrainLayerWeightParameters[0] = {}
+    MaterialLayersParameters[0] = {}
+}
+RuntimeVirtualTextureParameterValues[0] = {}
+FontParameterValues[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[2] =
+{
+    TextureStreamingData[0] =
+    {
+        SamplingScale = 2.57813
+        UVChannelIndex = 0
+        TextureName = T_Podium_Factoryrun_Logo
+    }
+    TextureStreamingData[1] =
+    {
+        SamplingScale = 3.20313
+        UVChannelIndex = 0
+        TextureName = T_Podium_Factoryrun_PT_001
+    }
+}

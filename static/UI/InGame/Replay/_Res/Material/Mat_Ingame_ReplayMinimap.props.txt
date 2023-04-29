@@ -1,0 +1,351 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[5] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+    ReferencedTextures[1] = Texture2D'/Game/ART/Env/Common/Blueprint/MiniMap/check.check'
+    ReferencedTextures[2] = Texture2D'/Game/UI/InGame/Replay/_Res/Texture/IngameReplayMinimapView_PlayerArrow.IngameReplayMinimapView_PlayerArrow'
+    ReferencedTextures[3] = Texture2D'/Game/UI/InGame/Replay/_Res/Texture/IngameReplayMinimapView_PlayerCircle.IngameReplayMinimapView_PlayerCircle'
+    ReferencedTextures[4] = Texture2D'/Game/UI/InGame/Replay/_Res/Texture/IngameReplayMinimapView_PlayerNum.IngameReplayMinimapView_PlayerNum'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[22] =
+                {
+                    ParameterInfos[0] = { Name=Dot_Rank7 }
+                    ParameterInfos[1] = { Name=Dot_Rank1 }
+                    ParameterInfos[2] = { Name=Dot_Rot2 }
+                    ParameterInfos[3] = { Name=Dot_Rot6 }
+                    ParameterInfos[4] = { Name=Dot_Rot1 }
+                    ParameterInfos[5] = { Name=StartLineCount }
+                    ParameterInfos[6] = { Name=Dot_Rot5 }
+                    ParameterInfos[7] = { Name=Dot_Rot0 }
+                    ParameterInfos[8] = { Name=MapSize }
+                    ParameterInfos[9] = { Name=Dot_Rank0 }
+                    ParameterInfos[10] = { Name=Dot_Rank3 }
+                    ParameterInfos[11] = { Name=StartLineSubRot }
+                    ParameterInfos[12] = { Name=Dot_Rot4 }
+                    ParameterInfos[13] = { Name=Dot_Rot3 }
+                    ParameterInfos[14] = { Name=StartLineRot }
+                    ParameterInfos[15] = { Name=Dot_Rank5 }
+                    ParameterInfos[16] = { Name=MapRotation }
+                    ParameterInfos[17] = { Name=Dot_Size }
+                    ParameterInfos[18] = { Name=Dot_Rot7 }
+                    ParameterInfos[19] = { Name=Dot_Rank4 }
+                    ParameterInfos[20] = { Name=Dot_Rank6 }
+                    ParameterInfos[21] = { Name=Dot_Rank2 }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[25] =
+                {
+                    ParameterInfos[0] = { Name=MapPosition }
+                    ParameterInfos[1] = { Name=ViewAxisZ }
+                    ParameterInfos[2] = { Name=Dot_Color6 }
+                    ParameterInfos[3] = { Name=Dot_Color2 }
+                    ParameterInfos[4] = { Name=Dot_Pos6 }
+                    ParameterInfos[5] = { Name=ViewAxisX }
+                    ParameterInfos[6] = { Name=Dot_Color4 }
+                    ParameterInfos[7] = { Name=Dot_Color5 }
+                    ParameterInfos[8] = { Name=Dot_Pos2 }
+                    ParameterInfos[9] = { Name=StartLineSubPos }
+                    ParameterInfos[10] = { Name=Dot_Pos4 }
+                    ParameterInfos[11] = { Name=RayPos }
+                    ParameterInfos[12] = { Name=StartLineSubScale }
+                    ParameterInfos[13] = { Name=Dot_Pos5 }
+                    ParameterInfos[14] = { Name=StartLineScale }
+                    ParameterInfos[15] = { Name=Dot_Color0 }
+                    ParameterInfos[16] = { Name=StartLinePos }
+                    ParameterInfos[17] = { Name=Dot_Pos7 }
+                    ParameterInfos[18] = { Name=Dot_Pos0 }
+                    ParameterInfos[19] = { Name=Dot_Color7 }
+                    ParameterInfos[20] = { Name=Dot_Color1 }
+                    ParameterInfos[21] = { Name=Dot_Color3 }
+                    ParameterInfos[22] = { Name=Dot_Pos1 }
+                    ParameterInfos[23] = { Name=Dot_Pos3 }
+                    ParameterInfos[24] = { Name=ViewAxisY }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=SDF_Texture_Object }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[22] =
+        {
+            ScalarValues[0] = 8
+            ScalarValues[1] = 2
+            ScalarValues[2] = 1
+            ScalarValues[3] = 1
+            ScalarValues[4] = 1
+            ScalarValues[5] = 0
+            ScalarValues[6] = 1
+            ScalarValues[7] = 1
+            ScalarValues[8] = 0
+            ScalarValues[9] = 1
+            ScalarValues[10] = 4
+            ScalarValues[11] = 0
+            ScalarValues[12] = 1
+            ScalarValues[13] = 1
+            ScalarValues[14] = 0
+            ScalarValues[15] = 6
+            ScalarValues[16] = 0
+            ScalarValues[17] = 0
+            ScalarValues[18] = 1
+            ScalarValues[19] = 5
+            ScalarValues[20] = 7
+            ScalarValues[21] = 3
+        }
+        VectorValues[25] =
+        {
+            VectorValues[0] = { R=0, G=0, B=0, A=1 }
+            VectorValues[1] = { R=0, G=0, B=0, A=1 }
+            VectorValues[2] = { R=0, G=0, B=0, A=0 }
+            VectorValues[3] = { R=0, G=0, B=0, A=0 }
+            VectorValues[4] = { R=0, G=0, B=0, A=1 }
+            VectorValues[5] = { R=0, G=0, B=0, A=1 }
+            VectorValues[6] = { R=0, G=0, B=0, A=0 }
+            VectorValues[7] = { R=0, G=0, B=0, A=0 }
+            VectorValues[8] = { R=0, G=0, B=0, A=1 }
+            VectorValues[9] = { R=0, G=0, B=0, A=1 }
+            VectorValues[10] = { R=0, G=0, B=0, A=1 }
+            VectorValues[11] = { R=0, G=0, B=0, A=1 }
+            VectorValues[12] = { R=0, G=0, B=0, A=1 }
+            VectorValues[13] = { R=0, G=0, B=0, A=1 }
+            VectorValues[14] = { R=0, G=0, B=0, A=1 }
+            VectorValues[15] = { R=0, G=0, B=0, A=0 }
+            VectorValues[16] = { R=0, G=0, B=0, A=1 }
+            VectorValues[17] = { R=0, G=0, B=0, A=1 }
+            VectorValues[18] = { R=0, G=0, B=0, A=1 }
+            VectorValues[19] = { R=0, G=0, B=0, A=0 }
+            VectorValues[20] = { R=0, G=0, B=0, A=0 }
+            VectorValues[21] = { R=0, G=0, B=0, A=0 }
+            VectorValues[22] = { R=0, G=0, B=0, A=1 }
+            VectorValues[23] = { R=0, G=0, B=0, A=1 }
+            VectorValues[24] = { R=0, G=0, B=0, A=1 }
+        }
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        }
+    }
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        ReferencedTextures[2] = Texture2D'/Game/ART/Env/Common/Blueprint/MiniMap/check.check'
+        ReferencedTextures[3] = Texture2D'/Game/UI/InGame/Replay/_Res/Texture/IngameReplayMinimapView_PlayerCircle.IngameReplayMinimapView_PlayerCircle'
+        ReferencedTextures[4] = Texture2D'/Game/UI/InGame/Replay/_Res/Texture/IngameReplayMinimapView_PlayerNum.IngameReplayMinimapView_PlayerNum'
+        ReferencedTextures[5] = Texture2D'/Game/UI/InGame/Replay/_Res/Texture/IngameReplayMinimapView_PlayerArrow.IngameReplayMinimapView_PlayerArrow'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        Name = SDF_Texture_Object
+        Group = None
+    }
+}
+CollectedScalarParameters[22] =
+{
+    CollectedScalarParameters[0] = { Value=8, Name=Dot_Rank7, Group=None }
+    CollectedScalarParameters[1] = { Value=2, Name=Dot_Rank1, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=Dot_Rot2, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Dot_Rot6, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=Dot_Rot1, Group=None }
+    CollectedScalarParameters[5] = { Value=0, Name=StartLineCount, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=Dot_Rot5, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=Dot_Rot0, Group=None }
+    CollectedScalarParameters[8] = { Value=0, Name=MapSize, Group=None }
+    CollectedScalarParameters[9] = { Value=1, Name=Dot_Rank0, Group=None }
+    CollectedScalarParameters[10] = { Value=4, Name=Dot_Rank3, Group=None }
+    CollectedScalarParameters[11] = { Value=0, Name=StartLineSubRot, Group=None }
+    CollectedScalarParameters[12] = { Value=1, Name=Dot_Rot4, Group=None }
+    CollectedScalarParameters[13] = { Value=1, Name=Dot_Rot3, Group=None }
+    CollectedScalarParameters[14] = { Value=0, Name=StartLineRot, Group=None }
+    CollectedScalarParameters[15] = { Value=6, Name=Dot_Rank5, Group=None }
+    CollectedScalarParameters[16] = { Value=0, Name=MapRotation, Group=None }
+    CollectedScalarParameters[17] = { Value=0, Name=Dot_Size, Group=None }
+    CollectedScalarParameters[18] = { Value=1, Name=Dot_Rot7, Group=None }
+    CollectedScalarParameters[19] = { Value=5, Name=Dot_Rank4, Group=None }
+    CollectedScalarParameters[20] = { Value=7, Name=Dot_Rank6, Group=None }
+    CollectedScalarParameters[21] = { Value=3, Name=Dot_Rank2, Group=None }
+}
+CollectedVectorParameters[25] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = MapPosition
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ViewAxisZ
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color6
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color2
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos6
+        Group = None
+    }
+    CollectedVectorParameters[5] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ViewAxisX
+        Group = None
+    }
+    CollectedVectorParameters[6] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color4
+        Group = None
+    }
+    CollectedVectorParameters[7] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color5
+        Group = None
+    }
+    CollectedVectorParameters[8] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos2
+        Group = None
+    }
+    CollectedVectorParameters[9] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLineSubPos
+        Group = None
+    }
+    CollectedVectorParameters[10] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos4
+        Group = None
+    }
+    CollectedVectorParameters[11] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = RayPos
+        Group = None
+    }
+    CollectedVectorParameters[12] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLineSubScale
+        Group = None
+    }
+    CollectedVectorParameters[13] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos5
+        Group = None
+    }
+    CollectedVectorParameters[14] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLineScale
+        Group = None
+    }
+    CollectedVectorParameters[15] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color0
+        Group = None
+    }
+    CollectedVectorParameters[16] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLinePos
+        Group = None
+    }
+    CollectedVectorParameters[17] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos7
+        Group = None
+    }
+    CollectedVectorParameters[18] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos0
+        Group = None
+    }
+    CollectedVectorParameters[19] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color7
+        Group = None
+    }
+    CollectedVectorParameters[20] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color1
+        Group = None
+    }
+    CollectedVectorParameters[21] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = Dot_Color3
+        Group = None
+    }
+    CollectedVectorParameters[22] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos1
+        Group = None
+    }
+    CollectedVectorParameters[23] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos3
+        Group = None
+    }
+    CollectedVectorParameters[24] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ViewAxisY
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

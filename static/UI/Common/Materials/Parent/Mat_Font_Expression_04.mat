@@ -1,0 +1,4 @@
+Diffuse=BlendFunc_DefBase
+Other[0]=BlendFunc_DefBlend
+Other[1]=Font_Gradient_mask_0
+Other[2]=Font_Gradient_mask_3

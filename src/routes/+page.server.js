@@ -1,14 +1,32 @@
 import kartsData from "$lib/data/karts.json"
 import charactersData from "$lib/data/characters.json"
 import tracksData from "$lib/data/tracks.json";
-import en_US from "$lib/locale/en-US.json";
-import ko_KR from "$lib/locale/ko-KR.json";
+import en_US from "$lib/locales/en-US.json";
+import ko_KR from "$lib/locales/ko-KR.json";
+import de_DE from "$lib/locales/de-DE.json";
+import es_419 from "$lib/locales/es-419.json";
+import fr_FR from "$lib/locales/fr-FR.json";
+import it_IT from "$lib/locales/it-IT.json";
+import ja_JP from "$lib/locales/ja-JP.json";
+import pt_BR from "$lib/locales/pt-BR.json";
+import th_TH from "$lib/locales/th-TH.json";
+import zh_Hans from "$lib/locales/zh-Hans.json";
+import zh_Hant from "$lib/locales/zh-Hant.json";
 
 function getLocalizations(id, category) {
 
     const locales = {
         en_US,
-        ko_KR
+        ko_KR,
+        de_DE,
+        es_419,
+        fr_FR,
+        it_IT,
+        ja_JP,
+        pt_BR,
+        th_TH,
+        zh_Hans,
+        zh_Hant
     }
 
     let key;
@@ -42,7 +60,7 @@ export async function load() {
             ...kart,
             entry_type: 0,
             name: getLocalizations(kart.id, "kart"),
-            imgSrc: `/images/ItemIcon/kart/Kart_${kart.id}.png`
+            imgSrc: `/UI_Common/_Res/ItemIcon/kart/Kart_${kart.id}.png`
         }
     })
 
@@ -52,7 +70,7 @@ export async function load() {
             entry_type: 3,
             name: getLocalizations(track.id, "track"),
             theme: getLocalizations(track.id, "trackTheme"),
-            imgSrc: `/images/Track/Loading/${track.id}.png`,
+            imgSrc: `/UI_Common/_Res/Track/Loading/${track.id}.png`,
         }
     })
 
@@ -61,7 +79,7 @@ export async function load() {
             ...character,
             entry_type: 1,
             name: getLocalizations(character.id, "character"),
-            imgSrc: `/images/ItemIcon/character/Character_${character.id}.png`,
+            imgSrc: `/UI_Common/_Res/ItemIcon/character/Character_${character.id}.png`,
         }
     })
 

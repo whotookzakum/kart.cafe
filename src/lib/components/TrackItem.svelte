@@ -1,5 +1,5 @@
 <script>
-    import enUSLocale from "$lib/locale/en-US.json";
+    import { userLocale } from "$lib/stores";
     import TrackDifficulty from "./TrackDifficulty.svelte";
     export let track;
 </script>
@@ -13,9 +13,9 @@
         height="380"
         loading="lazy"
     />
-    <a href={`/tracks/${track.id}`}>
-        <span class="track-theme">{track.theme}</span>
-        <span class="track-name">{track.name}</span>
+    <a href={`/${track.id}`}>
+        <span class="track-theme">{track.theme[$userLocale]}</span>
+        <span class="track-name">{track.name[$userLocale]}</span>
     </a>
     {#if track.hasMinimap}
         <img
@@ -33,7 +33,7 @@
                 {#if track.reqLicense}
                     <img
                         class="license-level"
-                        src={`/images/Common/_Res/Texture/License_${track.reqLicense}_Simple.png`}
+                        src={`/UI/Common/_Res/Texture/License_${track.reqLicense}_Simple.png`}
                         alt=""
                         width="330"
                         height="367"
@@ -44,7 +44,7 @@
             </div>
             <div class="right">
                 <img
-                    src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
+                    src="/UI/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
                     alt=""
                     width="24"
                     height="24"
@@ -52,7 +52,7 @@
                 />
                 {#if track.itemMode}
                     <img
-                        src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png"
+                        src="/UI/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png"
                         alt=""
                         width="24"
                         height="24"

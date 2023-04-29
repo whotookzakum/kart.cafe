@@ -1,10 +1,11 @@
 <script>
+    import { userLocale } from "$lib/stores";
     export let item;
 </script>
 
 <li class="item box surface hover focus-within-outline">
     <img src={item.imgSrc} alt="" width="408" height="380" loading="lazy" />
-    <a href={item.href}>{item.name}</a>
+    <a href={item.id}>{item.name[$userLocale]}</a>
 </li>
 
 <style lang="scss">

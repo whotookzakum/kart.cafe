@@ -1,0 +1,194 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[4] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+    ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+    ReferencedTextures[2] = Texture2D'/Game/ART/Common/Fx/Textures/ETC/T_FX_ETC_LinearColor_Base.T_FX_ETC_LinearColor_Base'
+    ReferencedTextures[3] = Texture2D'/Game/UI_Common/_Res/Podium/Texture/Podium_logo.Podium_logo'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[26] =
+                {
+                    ParameterInfos[0] = { Name=Line 02 Offset U }
+                    ParameterInfos[1] = { Name=Arrow Opacity }
+                    ParameterInfos[2] = { Name=Line 02 Radndom Seed }
+                    ParameterInfos[3] = { Name=Line 01 Time }
+                    ParameterInfos[4] = { Name=Line 02 Offset V }
+                    ParameterInfos[5] = { Name=CV Arrow }
+                    ParameterInfos[6] = { Name=Main Logo Scale }
+                    ParameterInfos[7] = { Name=Dot Opacity }
+                    ParameterInfos[8] = { Name=PT Position }
+                    ParameterInfos[9] = { Name=Line 01 Radndom Seed }
+                    ParameterInfos[10] = { Name=Line Tilling }
+                    ParameterInfos[11] = { Name=Line 01 Offset V }
+                    ParameterInfos[12] = { Name=Arrow Curve }
+                    ParameterInfos[13] = { Name=Line 01 Tiem Range }
+                    ParameterInfos[14] = { Name=Line Opacity }
+                    ParameterInfos[15] = { Name=Dot Count }
+                    ParameterInfos[16] = { Name=Flicker }
+                    ParameterInfos[17] = { Name=Line 01 Offset U }
+                    ParameterInfos[18] = { Name=Line 02 Tiem Range }
+                    ParameterInfos[19] = { Name=PT Opacity }
+                    ParameterInfos[20] = { Name=Glow }
+                    ParameterInfos[21] = { Name=Arrow Time }
+                    ParameterInfos[22] = { Name=Main Logo Opacity }
+                    ParameterInfos[23] = { Name=UV Noise }
+                    ParameterInfos[24] = { Name=Line 02 Time }
+                    ParameterInfos[25] = { Name=CV Back Color }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[5] =
+                {
+                    ParameterInfos[0] = { Name=Color Dot }
+                    ParameterInfos[1] = { Name=Color Arrow }
+                    ParameterInfos[2] = { Name=Time Remap }
+                    ParameterInfos[3] = { Name=Color Glow }
+                    ParameterInfos[4] = { Name=Start And End }
+                }
+            }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[26] =
+        {
+            ScalarValues[0] = -0.225
+            ScalarValues[1] = 0.35
+            ScalarValues[2] = 0.485
+            ScalarValues[3] = 1.04
+            ScalarValues[4] = -0.32
+            ScalarValues[5] = 2
+            ScalarValues[6] = 3
+            ScalarValues[7] = 0.2
+            ScalarValues[8] = 0.1
+            ScalarValues[9] = 0.075
+            ScalarValues[10] = 10
+            ScalarValues[11] = -0.6
+            ScalarValues[12] = 0.245
+            ScalarValues[13] = 0.3
+            ScalarValues[14] = 0.3
+            ScalarValues[15] = 280
+            ScalarValues[16] = 0.2
+            ScalarValues[17] = -0.3
+            ScalarValues[18] = 0.68
+            ScalarValues[19] = 0.3
+            ScalarValues[20] = 1
+            ScalarValues[21] = 0.5
+            ScalarValues[22] = 0
+            ScalarValues[23] = 0
+            ScalarValues[24] = 2
+            ScalarValues[25] = 1
+        }
+        VectorValues[5] =
+        {
+            VectorValues[0] = { R=0, G=0.004, B=0.19, A=1 }
+            VectorValues[1] = { R=0, G=0.843574, B=1, A=0 }
+            VectorValues[2] = { R=0, G=1, B=0, A=1.5 }
+            VectorValues[3] = { R=0.3, G=0.65, B=1, A=1 }
+            VectorValues[4] = { R=0, G=1, B=0, A=0.8 }
+        }
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+        ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+        ReferencedTextures[3] = Texture2D'/Game/UI_Common/_Res/Podium/Texture/Podium_logo.Podium_logo'
+        ReferencedTextures[5] = Texture2D'/Game/ART/Common/Fx/Textures/ETC/T_FX_ETC_LinearColor_Base.T_FX_ETC_LinearColor_Base'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[26] =
+{
+    CollectedScalarParameters[0] = { Value=-0.225, Name=Line 02 Offset U, Group=None }
+    CollectedScalarParameters[1] = { Value=0.35, Name=Arrow Opacity, Group=None }
+    CollectedScalarParameters[2] =
+    {
+        Value = 0.485
+        Name = Line 02 Radndom Seed
+        Group = None
+    }
+    CollectedScalarParameters[3] = { Value=1.04, Name=Line 01 Time, Group=None }
+    CollectedScalarParameters[4] = { Value=-0.32, Name=Line 02 Offset V, Group=None }
+    CollectedScalarParameters[5] = { Value=2, Name=CV Arrow, Group=None }
+    CollectedScalarParameters[6] = { Value=3, Name=Main Logo Scale, Group=None }
+    CollectedScalarParameters[7] = { Value=0.2, Name=Dot Opacity, Group=None }
+    CollectedScalarParameters[8] = { Value=0.1, Name=PT Position, Group=None }
+    CollectedScalarParameters[9] =
+    {
+        Value = 0.075
+        Name = Line 01 Radndom Seed
+        Group = None
+    }
+    CollectedScalarParameters[10] = { Value=10, Name=Line Tilling, Group=None }
+    CollectedScalarParameters[11] = { Value=-0.6, Name=Line 01 Offset V, Group=None }
+    CollectedScalarParameters[12] = { Value=0.245, Name=Arrow Curve, Group=None }
+    CollectedScalarParameters[13] = { Value=0.3, Name=Line 01 Tiem Range, Group=None }
+    CollectedScalarParameters[14] = { Value=0.3, Name=Line Opacity, Group=None }
+    CollectedScalarParameters[15] = { Value=280, Name=Dot Count, Group=None }
+    CollectedScalarParameters[16] = { Value=0.2, Name=Flicker, Group=None }
+    CollectedScalarParameters[17] = { Value=-0.3, Name=Line 01 Offset U, Group=None }
+    CollectedScalarParameters[18] = { Value=0.68, Name=Line 02 Tiem Range, Group=None }
+    CollectedScalarParameters[19] = { Value=0.3, Name=PT Opacity, Group=None }
+    CollectedScalarParameters[20] = { Value=1, Name=Glow, Group=None }
+    CollectedScalarParameters[21] = { Value=0.5, Name=Arrow Time, Group=None }
+    CollectedScalarParameters[22] = { Value=0, Name=Main Logo Opacity, Group=None }
+    CollectedScalarParameters[23] = { Value=0, Name=UV Noise, Group=None }
+    CollectedScalarParameters[24] = { Value=2, Name=Line 02 Time, Group=None }
+    CollectedScalarParameters[25] = { Value=1, Name=CV Back Color, Group=None }
+}
+CollectedVectorParameters[5] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0.004, B=0.19, A=1 }
+        Name = Color Dot
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0, G=0.843574, B=1, A=0 }
+        Name = Color Arrow
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=0, G=1, B=0, A=1.5 }
+        Name = Time Remap
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=0.3, G=0.65, B=1, A=1 }
+        Name = Color Glow
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=0, G=1, B=0, A=0.8 }
+        Name = Start And End
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,199 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UI/Common/Materials/Texture/T_UI_White_16x16.T_UI_White_16x16'
+    ReferencedTextures[1] = Texture2D'/Game/UI/Common/Materials/Texture/T_VectorDisPlac_Base.T_VectorDisPlac_Base'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[27] =
+                {
+                    ParameterInfos[0] = { Name=Base HUD Glow out 2mul }
+                    ParameterInfos[1] = { Name=Out Line Mask Opacity }
+                    ParameterInfos[2] = { Name=Taco Gauge ColorRange }
+                    ParameterInfos[3] = { Name=TacoGauge Start }
+                    ParameterInfos[4] = { Name=Base HUD Glow In Power }
+                    ParameterInfos[5] = { Name=Base HUD Glow out Power }
+                    ParameterInfos[6] = { Name=test }
+                    ParameterInfos[7] = { Name=In Mask Opacity }
+                    ParameterInfos[8] = { Name=In Mask End }
+                    ParameterInfos[9] = { Name=Out Line Mask End }
+                    ParameterInfos[10] = { Name=Mid Mask End }
+                    ParameterInfos[11] = { Name=Base HUD Glow In }
+                    ParameterInfos[12] = { Name=Out Line Mask Start }
+                    ParameterInfos[13] = { Name=Needle Rotator End }
+                    ParameterInfos[14] = { Name=Needle Rotator Start }
+                    ParameterInfos[15] = { Name=Glow Power }
+                    ParameterInfos[16] = { Name=Taco Gauge End }
+                    ParameterInfos[17] = { Name=EdgeSoftness }
+                    ParameterInfos[18] = { Name=Time }
+                    ParameterInfos[19] = { Name=Base HUD uv }
+                    ParameterInfos[20] = { Name=Base HUD Glow out mul }
+                    ParameterInfos[21] = { Name=Mid Mask Opacity }
+                    ParameterInfos[22] = { Name=Needle Opacity }
+                    ParameterInfos[23] = { Name=In Mask Start }
+                    ParameterInfos[24] = { Name=Glow Intencity }
+                    ParameterInfos[25] = { Name=Base HUD Glow out2 Power }
+                    ParameterInfos[26] = { Name=Mid Mask Start }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Taco Gauge Sub Color }
+                    ParameterInfos[1] = { Name=Taco Gauge Main Color }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Tex_Acc }
+                    ParameterInfos[1] = { Name=MSDF_Tex }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[27] =
+        {
+            ScalarValues[0] = 1
+            ScalarValues[1] = 1
+            ScalarValues[2] = 0.5
+            ScalarValues[3] = 0
+            ScalarValues[4] = 1
+            ScalarValues[5] = 0.8
+            ScalarValues[6] = 0
+            ScalarValues[7] = 1
+            ScalarValues[8] = 0
+            ScalarValues[9] = 0
+            ScalarValues[10] = 0
+            ScalarValues[11] = 1
+            ScalarValues[12] = 0
+            ScalarValues[13] = -10
+            ScalarValues[14] = 10
+            ScalarValues[15] = 1
+            ScalarValues[16] = 1
+            ScalarValues[17] = 2
+            ScalarValues[18] = 0.9999
+            ScalarValues[19] = 1
+            ScalarValues[20] = 1
+            ScalarValues[21] = 1
+            ScalarValues[22] = 1
+            ScalarValues[23] = 0
+            ScalarValues[24] = 1
+            ScalarValues[25] = 0.8
+            ScalarValues[26] = 0
+        }
+        VectorValues[2] =
+        {
+            VectorValues[0] = { R=0.161458, G=0, B=0, A=0 }
+            VectorValues[1] = { R=1, G=1, B=1, A=0 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UI/Common/Materials/Texture/T_UI_White_16x16.T_UI_White_16x16'
+            TextureValues[1] = Texture2D'/Game/UI/Common/Materials/Texture/T_VectorDisPlac_Base.T_VectorDisPlac_Base'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UI/Common/Materials/Texture/T_VectorDisPlac_Base.T_VectorDisPlac_Base'
+        ReferencedTextures[2] = Texture2D'/Game/UI/Common/Materials/Texture/T_UI_White_16x16.T_UI_White_16x16'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UI/Common/Materials/Texture/T_UI_White_16x16.T_UI_White_16x16'
+        Name = Tex_Acc
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UI/Common/Materials/Texture/T_VectorDisPlac_Base.T_VectorDisPlac_Base'
+        Name = MSDF_Tex
+        Group = None
+    }
+}
+CollectedScalarParameters[27] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Base HUD Glow out 2mul, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=Out Line Mask Opacity, Group=None }
+    CollectedScalarParameters[2] =
+    {
+        Value = 0.5
+        Name = Taco Gauge ColorRange
+        Group = None
+    }
+    CollectedScalarParameters[3] = { Value=0, Name=TacoGauge Start, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=Base HUD Glow In Power, Group=None }
+    CollectedScalarParameters[5] =
+    {
+        Value = 0.8
+        Name = Base HUD Glow out Power
+        Group = None
+    }
+    CollectedScalarParameters[6] = { Value=0, Name=test, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=In Mask Opacity, Group=None }
+    CollectedScalarParameters[8] = { Value=0, Name=In Mask End, Group=None }
+    CollectedScalarParameters[9] = { Value=0, Name=Out Line Mask End, Group=None }
+    CollectedScalarParameters[10] = { Value=0, Name=Mid Mask End, Group=None }
+    CollectedScalarParameters[11] = { Value=1, Name=Base HUD Glow In, Group=None }
+    CollectedScalarParameters[12] = { Value=0, Name=Out Line Mask Start, Group=None }
+    CollectedScalarParameters[13] = { Value=-10, Name=Needle Rotator End, Group=None }
+    CollectedScalarParameters[14] = { Value=10, Name=Needle Rotator Start, Group=None }
+    CollectedScalarParameters[15] = { Value=1, Name=Glow Power, Group=None }
+    CollectedScalarParameters[16] = { Value=1, Name=Taco Gauge End, Group=None }
+    CollectedScalarParameters[17] = { Value=2, Name=EdgeSoftness, Group=None }
+    CollectedScalarParameters[18] = { Value=0.9999, Name=Time, Group=None }
+    CollectedScalarParameters[19] = { Value=1, Name=Base HUD uv, Group=None }
+    CollectedScalarParameters[20] = { Value=1, Name=Base HUD Glow out mul, Group=None }
+    CollectedScalarParameters[21] = { Value=1, Name=Mid Mask Opacity, Group=None }
+    CollectedScalarParameters[22] = { Value=1, Name=Needle Opacity, Group=None }
+    CollectedScalarParameters[23] = { Value=0, Name=In Mask Start, Group=None }
+    CollectedScalarParameters[24] = { Value=1, Name=Glow Intencity, Group=None }
+    CollectedScalarParameters[25] =
+    {
+        Value = 0.8
+        Name = Base HUD Glow out2 Power
+        Group = None
+    }
+    CollectedScalarParameters[26] = { Value=0, Name=Mid Mask Start, Group=None }
+}
+CollectedVectorParameters[2] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.161458, G=0, B=0, A=0 }
+        Name = Taco Gauge Sub Color
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=1, B=1, A=0 }
+        Name = Taco Gauge Main Color
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}
