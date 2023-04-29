@@ -13,7 +13,7 @@
         height="380"
         loading="lazy"
     />
-    <a href={`/${track.id}`}>
+    <a href="/">
         <span class="track-theme">{track.theme[$userLocale]}</span>
         <span class="track-name">{track.name[$userLocale]}</span>
     </a>
