@@ -1,4 +1,5 @@
 <script>
+    export const prerender = true;
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/layout/Navigation.svelte";
     import PageFooter from "$lib/components/layout/PageFooter.svelte";
