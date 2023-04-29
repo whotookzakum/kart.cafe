@@ -11,7 +11,7 @@
         <img src="/images/boz.png" alt="" height="89" />
         <span class="grid" role="text">
             <span>Kart</span>
-            <span class="bold">Cafe <span class="beta-mark">v1.0</span></span>
+            <span class="bold">Cafe <span class="beta-mark">BETA</span></span>
         </span>
     </a>
     <div class="links">
@@ -19,7 +19,7 @@
         <hr />
         <a href="/">Guides</a>
         <hr />
-        <a href="/">{selectedLocale}</a>
+        <a href="/">Test</a>
         <hr />
         <select class="surface" name="" id="" bind:value={selectedLocale}>
             <option value="en_US">English</option>

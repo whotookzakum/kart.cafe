@@ -28,8 +28,12 @@ button {
         border-color: var(--accent) !important;
     }
 
-    &:active {
+    &:not([disabled]):active {
         transform: translateY(2px);
+    }
+
+    &[disabled] {
+        filter: saturate(0) brightness(0.7) contrast(2);
     }
 }
 
