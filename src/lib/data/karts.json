@@ -1,0 +1,264 @@
+[
+    {
+        "id": 401000178,
+        "name": "Able",
+        "exclusive_platform": "iOS",
+        "rarity": 1,
+        "source": "Available when playing on mobile with iOS."
+    },
+    {
+        "id": 401000021,
+        "name": "Ace",
+        "rarity": 1,
+        "source": "Obtained by purchasing the Ace Package for 10,000 Lucci during Preseason. Jan 12 ~ March 8 2023."
+    },
+    {
+        "id": 401000185,
+        "name": "Aurora",
+        "rarity": 1,
+        "source": "Obtained from the Preseason Normal Racing Pass (Level 20)."
+    },
+    {
+        "id": 401000039,
+        "name": "Brutus",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000027,
+        "name": "Bunny Buggy",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000025,
+        "name": "Burst",
+        "rarity": 1,
+        "source": "Rewarded for obtaining a Bronze rank on the B2 License challenges (earn at least 1 star in every challenge)."
+    },
+    {
+        "id": 401000106,
+        "name": "Chainsaw",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000180,
+        "name": "Comet Muscle",
+        "exclusive_platform": "Steam",
+        "rarity": 1,
+        "source": "Available when playing on PC with Steam."
+    },
+    {
+        "id": 401000181,
+        "name": "Cosmic Muscle",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000001,
+        "name": "Cotton",
+        "rarity": 1,
+        "source": "Rewarded for obtaining 3 stars on the final B2 License challenge (Duel 1)."
+    },
+    {
+        "id": 401000140,
+        "name": "Dark Knight",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000006,
+        "name": "Deuce Coupe",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000123,
+        "name": "Devil",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000005,
+        "name": "Doom Buggy",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000038,
+        "name": "Doom Skull",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000035,
+        "name": "Fire Engine",
+        "rarity": 1,
+        "source": "Obtained from the Preseason Premium Racing Pass (Level 10)."
+    },
+    {
+        "id": 401000160,
+        "name": "Gentley",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000004,
+        "name": "Hallowheels",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000051,
+        "name": "Justice",
+        "rarity": 1,
+        "source": "Obtained from the Preseason Premium Racing Pass (Level 40)."
+    },
+    {
+        "id": 401000042,
+        "name": "Luna",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000031,
+        "name": "Marathon",
+        "rarity": 1,
+        "source": "Rewarded for obtaining a Bronze rank on the B1 License challenges (earn at least 1 star in every challenge)."
+    },
+    {
+        "id": 401000166,
+        "name": "Mine Cart",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000142,
+        "name": "New York Muscle Car",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000040,
+        "name": "New York Taxi",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000176,
+        "name": "Nexon Kart",
+        "exclusive_platform": "Nexon Launcher",
+        "rarity": 1,
+        "source": "Available when playing on PC with Nexon Launcher."
+    },
+    {
+        "id": 401000128,
+        "name": "Noble",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000127,
+        "name": "NYC Tour Bus",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000161,
+        "name": "Play Kart",
+        "exclusive_platform": "Android",
+        "rarity": 1,
+        "source": "Available when playing on mobile with Android."
+    },
+    {
+        "id": 401000012,
+        "name": "Practice Kart",
+        "rarity": 1,
+        "source": "Available by default."
+    },
+    {
+        "id": 401000010,
+        "name": "Proto",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000179,
+        "name": "Quantum Muscle",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000043,
+        "name": "Saber",
+        "rarity": 1,
+        "source": "Rewarded for obtaining a Bronze rank on the L3 License challenges (earn at least 1 star in every challenge)."
+    },
+    {
+        "id": 401000028,
+        "name": "Shellback Raider",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000023,
+        "name": "Solid",
+        "rarity": 1,
+        "source": "Rewarded for obtaining 3 stars on the final B1 License challenge (Duel 2)."
+    },
+    {
+        "id": 401000133,
+        "name": "Speed Reader",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000024,
+        "name": "Spike",
+        "rarity": 1,
+        "source": "Obtained as a daily login reward (day 3) during Preseason. (During the first two weeks of preseason)."
+    },
+    {
+        "id": 401000061,
+        "name": "Spyder",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000002,
+        "name": "Steamshark",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000103,
+        "name": "Storm",
+        "rarity": 1,
+        "source": "Obtained by purchasing the Livery First Step Package for ~~575~~ 200 K-Coin during Preseason. Jan 12 ~ March 8 2023."
+    },
+    {
+        "id": 401000137,
+        "name": "Tactical Assault Kart",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000007,
+        "name": "Titan",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000164,
+        "name": "War Hog",
+        "rarity": 1,
+        "source": ""
+    },
+    {
+        "id": 401000138,
+        "name": "Western Wagon",
+        "rarity": 1,
+        "source": ""
+    }
+]

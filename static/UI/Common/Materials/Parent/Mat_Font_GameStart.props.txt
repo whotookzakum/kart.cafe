@@ -1,0 +1,141 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+    ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+    ReferencedTextures[2] = Texture2D'/Game/UI/Common/Materials/Texture/Font_Gradient_mask_1.Font_Gradient_mask_1'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[12] =
+                {
+                    ParameterInfos[0] = { Name=Circle_Pos_X }
+                    ParameterInfos[1] = { Name=starttime2 }
+                    ParameterInfos[2] = { Name=PaddingTop }
+                    ParameterInfos[3] = { Name=Circle_Radius }
+                    ParameterInfos[4] = { Name=StartTime }
+                    ParameterInfos[5] = { Name=LineTimeDelay3 }
+                    ParameterInfos[6] = { Name=Circle_Hardness }
+                    ParameterInfos[7] = { Name=Circle_Pos_Y }
+                    ParameterInfos[8] = { Name=LineTimeDelay }
+                    ParameterInfos[9] = { Name=Circle_Mul }
+                    ParameterInfos[10] = { Name=Speed }
+                    ParameterInfos[11] = { Name=LineTimeDelay2 }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=BlendColor }
+                    ParameterInfos[1] = { Name=BaseColor_1 }
+                    ParameterInfos[2] = { Name=BaseColor_2 }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Mask }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[12] =
+        {
+            ScalarValues[0] = 0
+            ScalarValues[1] = 2.7
+            ScalarValues[2] = 0.2
+            ScalarValues[3] = 0.452381
+            ScalarValues[4] = 0
+            ScalarValues[5] = 0.07
+            ScalarValues[6] = 0
+            ScalarValues[7] = 0
+            ScalarValues[8] = 0.05
+            ScalarValues[9] = 5
+            ScalarValues[10] = 0.3
+            ScalarValues[11] = 0.08
+        }
+        VectorValues[3] =
+        {
+            VectorValues[0] = { R=1, G=0.95, B=0, A=1 }
+            VectorValues[1] = { R=1, G=0.496933, B=0.001518, A=1 }
+            VectorValues[2] = { R=1, G=0.337164, B=0.000911, A=1 }
+        }
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/UI/Common/Materials/Texture/Font_Gradient_mask_1.Font_Gradient_mask_1'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+        ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+        ReferencedTextures[2] = Texture2D'/Game/UI/Common/Materials/Texture/Font_Gradient_mask_1.Font_Gradient_mask_1'
+    }
+}
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UI/Common/Materials/Texture/Font_Gradient_mask_1.Font_Gradient_mask_1'
+        Name = Mask
+        Group = None
+    }
+}
+CollectedScalarParameters[12] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Circle_Pos_X, Group=None }
+    CollectedScalarParameters[1] = { Value=2.7, Name=starttime2, Group=None }
+    CollectedScalarParameters[2] = { Value=0.2, Name=PaddingTop, Group=None }
+    CollectedScalarParameters[3] = { Value=0.452381, Name=Circle_Radius, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=StartTime, Group=None }
+    CollectedScalarParameters[5] = { Value=0.07, Name=LineTimeDelay3, Group=None }
+    CollectedScalarParameters[6] = { Value=0, Name=Circle_Hardness, Group=None }
+    CollectedScalarParameters[7] = { Value=0, Name=Circle_Pos_Y, Group=None }
+    CollectedScalarParameters[8] = { Value=0.05, Name=LineTimeDelay, Group=None }
+    CollectedScalarParameters[9] = { Value=5, Name=Circle_Mul, Group=None }
+    CollectedScalarParameters[10] = { Value=0.3, Name=Speed, Group=None }
+    CollectedScalarParameters[11] = { Value=0.08, Name=LineTimeDelay2, Group=None }
+}
+CollectedVectorParameters[3] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=1, G=0.95, B=0, A=1 }
+        Name = BlendColor
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=0.496933, B=0.001518, A=1 }
+        Name = BaseColor_1
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=1, G=0.337164, B=0.000911, A=1 }
+        Name = BaseColor_2
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

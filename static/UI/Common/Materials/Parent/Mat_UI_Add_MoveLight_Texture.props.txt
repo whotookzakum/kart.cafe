@@ -1,0 +1,88 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[11] =
+                {
+                    ParameterInfos[0] = { Name=MoveSpeed_V }
+                    ParameterInfos[1] = { Name=Zone2_Multi }
+                    ParameterInfos[2] = { Name=Zone2_Power }
+                    ParameterInfos[3] = { Name=Zone1_Power }
+                    ParameterInfos[4] = { Name=AddTanget }
+                    ParameterInfos[5] = { Name=MoveTime }
+                    ParameterInfos[6] = { Name=Zone2_Add }
+                    ParameterInfos[7] = { Name=Zone1_Add }
+                    ParameterInfos[8] = { Name=MoveSpeed_U }
+                    ParameterInfos[9] = { Name=Dgree }
+                    ParameterInfos[10] = { Name=Zone1_Multiple }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Texture }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[11] = { 2, 5, 3, 1, 0, 0.1, 1, 1, 1, 20, 1 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        }
+    }
+    ReferencedTextures[1] =
+    {
+        ReferencedTextures[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        Name = Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[11] =
+{
+    CollectedScalarParameters[0] = { Value=2, Name=MoveSpeed_V, Group=None }
+    CollectedScalarParameters[1] = { Value=5, Name=Zone2_Multi, Group=None }
+    CollectedScalarParameters[2] = { Value=3, Name=Zone2_Power, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Zone1_Power, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=AddTanget, Group=None }
+    CollectedScalarParameters[5] = { Value=0.1, Name=MoveTime, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=Zone2_Add, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=Zone1_Add, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=MoveSpeed_U, Group=None }
+    CollectedScalarParameters[9] = { Value=20, Name=Dgree, Group=None }
+    CollectedScalarParameters[10] = { Value=1, Name=Zone1_Multiple, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

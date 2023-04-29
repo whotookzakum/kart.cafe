@@ -1,92 +1,92 @@
 [
     {
         "name": "Booster",
-        "imgSrc": "ItemSlot/booster",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/booster",
         "dropRates": [5, 15, 30, 45, 0]
     },
     {
         "name": "Banana",
-        "imgSrc": "ItemSlot/banana",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/banana",
         "dropRates": [25, 10, 0, 0, 0]
     },
     {
         "name": "Mine",
-        "imgSrc": "ItemSlot/mine",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/mine",
         "dropRates": [0, 0, 0, 0, 0]
     },
     {
         "name": "EMP",
-        "imgSrc": "ItemSlot/spaceShipDefence",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/spaceShipDefence",
         "dropRates": [15, 0, 5, 5, 0]
     },
     {
         "name": "Cloud",
-        "imgSrc": "ItemSlot/cloud",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/cloud",
         "dropRates": [0, 0, 0, 0, 0]
     },
     {
         "name": "Rocket",
-        "imgSrc": "ItemSlot/missile",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/missile",
         "dropRates": [0, 20, 15, 0, 0]
     },
     {
         "name": "RocketFirstRank",
-        "imgSrc": "ItemSlot/missileFirst",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/missileFirst",
         "dropRates": [0, 0, 0, 0, 0]
     },
     {
         "name": "Shield",
-        "imgSrc": "ItemSlot/shield",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/shield",
         "dropRates": [55, 15, 0, 0, 0]
     },
     {
         "name": "UFO",
-        "imgSrc": "ItemSlot/spaceShip",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/spaceShip",
         "dropRates": [0, 5, 5, 10, 0]
     },
     {
         "name": "WaterBomb",
-        "imgSrc": "ItemSlot/bomb",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/bomb",
         "dropRates": [0, 10, 10, 5, 0]
     },
     {
         "name": "WaterFly",
-        "imgSrc": "ItemSlot/bombWing",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/bombWing",
         "dropRates": [0, 15, 15, 0, 0]
     },
     {
         "name": "Magnet",
-        "imgSrc": "ItemSlot/magnet",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/magnet",
         "dropRates": [0, 5, 10, 20, 0]
     },
     {
         "name": "Thunderbolt",
-        "imgSrc": "ItemSlot/lightning",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/lightning",
         "dropRates": [0, 0, 0, 5, 0]
     },
     {
         "name": "SlotLock",
-        "imgSrc": "ItemSlot/lock",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/lock",
         "dropRates": [0, 0, 0, 0, 0]
     },
     {
         "name": "Angel",
-        "imgSrc": "ItemSlot/angel",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/angel",
         "dropRates": [0, 5, 5, 5, 0]
     },
     {
         "name": "Siren",
-        "imgSrc": "ItemSlot/siren",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/siren",
         "dropRates": [0, 0, 0, 0, 0]
     },
     {
         "name": "IceBomb",
-        "imgSrc": "ItemSlot/ice",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/ice",
         "dropRates": [0, 0, 0, 0, 0]
     },
     {
         "name": "Barricade",
-        "imgSrc": "ItemSlot/barricade",
+        "imgSrc": "/UI_Common/_Res/ItemSlot/barricade",
         "dropRates": [0, 0, 5, 5, 0]
     }
 ]

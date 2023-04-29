@@ -4,14 +4,35 @@
 body {
     margin: 0;
     background: var(--bg);
+    accent-color: var(--accent);
 }
 
 * {
     box-sizing: border-box;
+
+    &:focus-visible {
+        outline: 2px solid var(--accent); // chrome doesn't use accent-color for focus states
+    }
 }
 
 .grid {
     display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.g-50 {
+    gap: 0.5rem;
+}
+
+.g-25 {
+    gap: 0.25rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .box {
@@ -30,22 +51,63 @@ body {
         border-color: var(--surface3);
     }
 
-    .surface {
-        background: var(--surface2);
+    &.item:focus-within {
         border-color: var(--surface3);
 
-        &.hover:hover, &.hover:focus-visible {
-            background: var(--surface3);
-            border-color: var(--surface4);
-        }
-
-        .surface {
-            background: var(--surface3);
-            border-color: var(--surface4, hsl(219, 70%, 45%));
+        a::after {
+            background: var(--surface2);
         }
     }
 }
 
+.surface .surface {
+    background: var(--surface2);
+    border-color: var(--surface3);
+
+    &.hover:hover, &.hover:focus-visible {
+        background: var(--surface3);
+        border-color: var(--surface4, hsl(219, 70%, 45%));
+    }
+
+    &.item:focus-within {
+        border-color: var(--surface4, hsl(219, 70%, 45%));
+
+        a::after {
+            background: var(--surface3);
+        }
+    }
+}
+
+.surface .surface .surface {
+    background: var(--surface3);
+    border-color: var(--surface4, hsl(219, 70%, 45%));
+}
+
 .absolute {
     position: absolute;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.focus-within-outline:focus-within,
+.hover-outline:hover {
+    outline: 2px solid var(--accent); // or var(--highlight);
+}
+
+#changelog {
+    gap: 1rem;
+
+    h2, h3 {
+        margin: 0;
+        font-size: 1.17rem;
+        color: var(--highlight);
+    }
 }

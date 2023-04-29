@@ -1,0 +1,115 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[8] =
+                {
+                    ParameterInfos[0] = { Name=Opacity2 }
+                    ParameterInfos[1] = { Name=Color3_Smooth }
+                    ParameterInfos[2] = { Name=Degree }
+                    ParameterInfos[3] = { Name=Color3_Ratio }
+                    ParameterInfos[4] = { Name=Color1_Smooth }
+                    ParameterInfos[5] = { Name=Color1_Ratio }
+                    ParameterInfos[6] = { Name=Opacity3 }
+                    ParameterInfos[7] = { Name=Opacity1 }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Color2 }
+                    ParameterInfos[1] = { Name=Color3 }
+                    ParameterInfos[2] = { Name=Color1 }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Texture_Alpha }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[8] = { 0.1, 1, 0, 0.1, 1, 0.1, 0.7, 1 }
+        VectorValues[3] =
+        {
+            VectorValues[0] = { R=0, G=0, B=1, A=1 }
+            VectorValues[1] = { R=1, G=1, B=0, A=1 }
+            VectorValues[2] = { R=1, G=0, B=1, A=1 }
+        }
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        }
+    }
+    ReferencedTextures[1] =
+    {
+        ReferencedTextures[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        Name = Texture_Alpha
+        Group = None
+    }
+}
+CollectedScalarParameters[8] =
+{
+    CollectedScalarParameters[0] = { Value=0.1, Name=Opacity2, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=Color3_Smooth, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=Degree, Group=None }
+    CollectedScalarParameters[3] = { Value=0.1, Name=Color3_Ratio, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=Color1_Smooth, Group=None }
+    CollectedScalarParameters[5] = { Value=0.1, Name=Color1_Ratio, Group=None }
+    CollectedScalarParameters[6] = { Value=0.7, Name=Opacity3, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=Opacity1, Group=None }
+}
+CollectedVectorParameters[3] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=1, A=1 }
+        Name = Color2
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=1, B=0, A=1 }
+        Name = Color3
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=1, G=0, B=1, A=1 }
+        Name = Color1
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,78 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_1.btn_ag_x_1'
+    ReferencedTextures[1] = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_2.btn_ag_x_2'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=speed }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Texture02 }
+                    ParameterInfos[1] = { Name=Texture01 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[1] = { 1 }
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_2.btn_ag_x_2'
+            TextureValues[1] = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_1.btn_ag_x_1'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_1.btn_ag_x_1'
+        ReferencedTextures[1] = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_2.btn_ag_x_2'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_2.btn_ag_x_2'
+        Name = Texture02
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UI/InGame/Scenario/_Res/Texture/btn_ag_x_1.btn_ag_x_1'
+        Name = Texture01
+        Group = None
+    }
+}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=speed, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

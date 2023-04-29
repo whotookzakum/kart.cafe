@@ -1,8 +1,31 @@
 <script>
+    import { userLocale } from "$lib/stores";
     import MetaTags from "$lib/components/MetaTags.svelte";
-    import Changelog from "$lib/components/misc/Changelog.svelte";
-    import ItemDropTable from "$lib/components/misc/ItemDropTable.svelte";
     import YouTube from "../lib/components/YouTube.svelte";
+    import ItemMenu from "$lib/components/ItemMenu.svelte";
+    import Item from "$lib/components/Item.svelte";
+    import TrackItem from "$lib/components/TrackItem.svelte";
+    import { checkStringIncludes } from "$lib/utils"
+
+    export let data;
+
+    let searchInput = "";
+    let itemsPerPage = 15;
+    let pageNumber = 1;
+
+    $: filteredEntries = data.entries.filter((entry, index) =>
+        checkStringIncludes(entry.name[$userLocale], searchInput)
+    );
+
+    $: maxPages = Math.ceil(filteredEntries.length / itemsPerPage);
+
+    $: if (pageNumber > maxPages && maxPages > 0) pageNumber = maxPages;
+
+    $: entries = filteredEntries.filter(
+        (_, index) =>
+            index > itemsPerPage * pageNumber - itemsPerPage - 1 &&
+            index < itemsPerPage * pageNumber
+    );
 </script>
 
 <MetaTags
@@ -11,30 +34,77 @@
 />
 
 <h1>Welcome to Kart Cafe!</h1>
-<p>
-    We are a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
-    ratione dolore, aliquid adipisci quae accusantium harum nisi, magni dolorem
-    necessitatibus quo!
-</p>
+<input
+    class="box surface"
+    type="text"
+    placeholder={`Search for karts, characters, accessories, and tracks`}
+    bind:value={searchInput}
+/>
 
-<h2>Featured Video</h2>
+<!-- Items 140, Tracks 230 -->
+<ItemMenu itemWidth="140">
+    {#each entries as entry}
+        {#if entry.entry_type !== 3}
+            <Item item={entry} />
+        {/if}
+    {/each}
+</ItemMenu>
+<ItemMenu itemWidth="230">
+    {#each entries as entry}
+        {#if entry.entry_type === 3}
+            <TrackItem track={entry} />
+        {/if}
+    {/each}
+</ItemMenu>
+
+<div class="flex">
+    <button
+        class="box surface"
+        on:click={() => pageNumber--}
+        disabled={pageNumber <= 1}>Previous</button
+    >
+    <div class="grid">
+        <span>Page {pageNumber} of {maxPages}</span>
+        <span>
+            Showing {itemsPerPage * pageNumber - itemsPerPage + 1} - {itemsPerPage *
+                pageNumber -
+                itemsPerPage +
+                entries.length} of {filteredEntries.length}
+        </span>
+    </div>
+    <button
+        class="box surface"
+        on:click={() => pageNumber++}
+        disabled={pageNumber >= maxPages}>Next</button
+    >
+</div>
+
+<!-- <h2>Featured Video</h2>
 <YouTube
     id="wLZNerE4Vs8"
     title="Drift Tutorial: How to drift"
-    caption="In this weeks video, donutKR teaches us the basics of drifting techniques."
-/>
+    caption="donutKR teaches us the basics of drifting techniques."
+/> -->
 
-<h2>What's New</h2>
-<Changelog />
+<style lang="scss">
+    input[type="text"].surface {
+        color: var(--text1);
+        font: inherit;
+    }
 
-<h2>Item Mode drop rates (8 players)</h2>
+    .flex {
+        gap: 1rem;
+        justify-content: center;
+        // justify-content: space-between;
+    }
 
-<h3>Squad</h3>
-<ItemDropTable mode="squad" />
+    .grid {
+        justify-items: center;
+        color: var(--highlight);
 
-<h3>Duo</h3>
-<ItemDropTable mode="duo" />
-
-<h3>Solo</h3>
-<ItemDropTable mode="solo" />
-
+        span:nth-of-type(2) {
+            color: var(--text2);
+            font-size: 0.9rem;
+        }
+    }
+</style>

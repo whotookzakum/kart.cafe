@@ -17,7 +17,7 @@ a {
 
 button {
     cursor: pointer;
-    font-family: inherit;
+    font: inherit;
     color: inherit;
     border-radius: 7px;
     transition: all 0.2s ease;
@@ -28,8 +28,12 @@ button {
         border-color: var(--accent) !important;
     }
 
-    &:active {
+    &:not([disabled]):active {
         transform: translateY(2px);
+    }
+
+    &[disabled] {
+        filter: saturate(0) brightness(0.7) contrast(2);
     }
 }
 
@@ -41,15 +45,6 @@ h5,
 h6,
 strong {
     font-weight: 500;
-}
-
-h3,
-h2 {
-    margin: 0;
-}
-
-h2,
-h1 {
     margin-bottom: 0;
 }
 
@@ -65,5 +60,27 @@ figure {
         text-align: center;
         color: var(--highlight);
         font-size: 0.9rem;
+        margin-top: 0.5rem;
     }
+}
+
+select.surface {
+    padding: 0.5rem;
+    font: inherit;
+    font-size: 1rem;
+    color: var(--text1);
+
+    &:disabled {
+        filter: saturate(0.3);
+        color: var(--text2);
+    }
+}
+
+optgroup {
+    font-style: normal;
+    color: var(--highlight);
+}
+
+option {
+    color: var(--text1);
 }

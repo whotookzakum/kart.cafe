@@ -1,0 +1,290 @@
+[
+    {
+        "id": "Beach_R01",
+        "name": "Miami Drive",
+        "hasMinimap": true
+    },
+    {
+        "id": "Desert_I03",
+        "name": "Abandoned Oasis",
+        "difficulty": 1,
+        "itemMode": true
+    },
+    {
+        "id": "Desert_R02",
+        "name": "Ancient Aqueducts",
+        "difficulty": 4,
+        "reqLicense": "L3",
+        "hasMinimap": true
+    },
+    {
+        "id": "Desert_R01",
+        "name": "Construction Chaos",
+        "difficulty": 5,
+        "reqLicense": "L3",
+        "hasMinimap": true
+    },
+    {
+        "id": "Desert_I04",
+        "name": "Dusty Bazaar",
+        "difficulty": 1,
+        "itemMode": true
+    },
+    {
+        "id": "Desert_I02",
+        "name": "Pharaoh's Pass",
+        "difficulty": 3,
+        "itemMode": true,
+        "reqLicense": "B1",
+        "hasMinimap": true
+    },
+    {
+        "id": "Desert_I06",
+        "name": "Sphinx's Riddle",
+        "difficulty": 2,
+        "itemMode": true,
+        "reqLicense": "B2"
+    },
+    {
+        "id": "Forest_R07",
+        "name": "Log Leap",
+        "difficulty": 3,
+        "reqLicense": "B1"
+    },
+    {
+        "id": "Forest_I01",
+        "name": "Lumberjack Lane",
+        "difficulty": 1,
+        "itemMode": true,
+        "hasMinimap": true
+    },
+    {
+        "id": "Forest_I05",
+        "name": "Misty Falls"
+    },
+    {
+        "id": "Forest_I02",
+        "name": "Mushroom Caves"
+    },
+    {
+        "id": "Forest_I07",
+        "name": "Panda Village",
+        "difficulty": 2,
+        "itemMode": true,
+        "reqLicense": "B2"
+    },
+    {
+        "id": "Forest_I04",
+        "name": "Rocky Roadway",
+        "difficulty": 2,
+        "itemMode": true,
+        "reqLicense": "B2",
+        "hasMinimap": true
+    },
+    {
+        "id": "Forest_I03",
+        "name": "Woodsy Way",
+        "difficulty": 1,
+        "itemMode": true,
+        "hasMinimap": true
+    },
+    {
+        "id": "Forest_R02",
+        "name": "Zigzag Timberland",
+        "difficulty": 4,
+        "reqLicense": "L3"
+    },
+    {
+        "id": "Ice_R05",
+        "name": "360 Tower"
+    },
+    {
+        "id": "Ice_R04",
+        "name": "Extreme Stadium",
+        "difficulty": 4,
+        "reqLicense": "L3",
+        "hasMinimap": true
+    },
+    {
+        "id": "Ice_I04",
+        "name": "Icebreaker Pass",
+        "difficulty": 1,
+        "itemMode": true,
+        "hasMinimap": true
+    },
+    {
+        "id": "Ice_I05",
+        "name": "Polar Halfpipe",
+        "difficulty": 2,
+        "itemMode": true,
+        "reqLicense": "B2",
+        "hasMinimap": true
+    },
+    {
+        "id": "Ice_I02",
+        "name": "Shark's Wake",
+        "difficulty": 1,
+        "itemMode": true
+    },
+    {
+        "id": "Ice_R01",
+        "name": "Snowbound Slopes",
+        "difficulty": 5,
+        "reqLicense": "L3"
+    },
+    {
+        "id": "Mine_R05",
+        "name": "Gold Rush",
+        "difficulty": 3,
+        "reqLicense": "B1"
+    },
+    {
+        "id": "Mine_I02",
+        "name": "Magma Cavern",
+        "difficulty": 3,
+        "itemMode": true,
+        "reqLicense": "B1"
+    },
+    {
+        "id": "Mine_I01",
+        "name": "Mother Lode",
+        "difficulty": 3,
+        "itemMode": true,
+        "reqLicense": "B1"
+    },
+    {
+        "id": "Mine_R02",
+        "name": "Rickety Rails",
+        "difficulty": 3,
+        "reqLicense": "B1"
+    },
+    {
+        "id": "Mine_R04",
+        "name": "Three Shortcuts",
+        "difficulty": 4,
+        "reqLicense": "L3"
+    },
+    {
+        "id": "Mine_R01",
+        "name": "Winding Slopes",
+        "difficulty": 5,
+        "reqLicense": "L3"
+    },
+    {
+        "id": "Moonhill_R05",
+        "name": "Central Station"
+    },
+    {
+        "id": "Moonhill_I03",
+        "name": "Lawless Tunnel",
+        "hasMinimap": true
+    },
+    {
+        "id": "Moonhill_I02",
+        "name": "Mean Streets",
+        "hasMinimap": true
+    },
+    {
+        "id": "Moonhill_I04",
+        "name": "Streetcar Run",
+        "hasMinimap": true
+    },
+    {
+        "id": "Tomb_I01",
+        "name": "Cemetery Circuit",
+        "hasMinimap": true
+    },
+    {
+        "id": "Tomb_I04",
+        "name": "Specter Pass",
+        "hasMinimap": true
+    },
+    {
+        "id": "Tomb_I02",
+        "name": "Wayward Turnabout",
+        "hasMinimap": true
+    },
+    {
+        "id": "Village_R01",
+        "name": "Bayside Bridge Run",
+        "difficulty": 2,
+        "reqLicense": "B2",
+        "hasMinimap": true
+    },
+    {
+        "id": "Village_R03",
+        "name": "Boom Hill Tunnel",
+        "difficulty": 5,
+        "reqLicense": "L3",
+        "hasMinimap": true
+    },
+    {
+        "id": "Village_I10",
+        "name": "Breezy Park"
+    },
+    {
+        "id": "Village_I01",
+        "name": "Clocktower Crossing",
+        "difficulty": 2,
+        "itemMode": true,
+        "reqLicense": "B2",
+        "hasMinimap": true
+    },
+    {
+        "id": "Village_I04",
+        "name": "Cobbled Quayside",
+        "difficulty": 1,
+        "itemMode": true,
+        "hasMinimap": true
+    },
+    {
+        "id": "Village_I02",
+        "name": "Handy Harbor",
+        "difficulty": 3,
+        "reqLicense": "B1",
+        "hasMinimap": true
+    },
+    {
+        "id": "Village_I09",
+        "name": "Town Hall"
+    },
+    {
+        "id": "World_R07",
+        "name": "Boostwood"
+    },
+    {
+        "id": "World_I08",
+        "name": "Gangnam Streets",
+        "difficulty": 2,
+        "itemMode": true,
+        "reqLicense": "B2"
+    },
+    {
+        "id": "World_I07",
+        "name": "Istanbul Sunset Plaza",
+        "difficulty": 2,
+        "itemMode": true,
+        "reqLicense": "B2"
+    },
+    {
+        "id": "World_I02",
+        "name": "London Night"
+    },
+    {
+        "id": "World_R01",
+        "name": "New York Rally"
+    },
+    {
+        "id": "World_R02",
+        "name": "Rio De Ja Nitro",
+        "hasMinimap": true
+    },
+    {
+        "id": "World_I06",
+        "name": "SF Seaplane Base"
+    },
+    {
+        "id": "World_R12",
+        "name": "Terracotta Twister"
+    }
+]

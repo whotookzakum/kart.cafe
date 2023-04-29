@@ -1,0 +1,482 @@
+[
+    {
+        "id": 100000017,
+        "name": "Airi",
+        "costumes": [
+            {
+                "id": 217000001,
+                "rarity": 1
+            },
+            {
+                "id": 217000005,
+                "rarity": 2
+            }
+        ]
+    },
+    {
+        "id": 100000002,
+        "name": "Bazzi",
+        "costumes": [
+            {
+                "id": 202000001,
+                "rarity": 1
+            },
+            {
+                "id": 202000004,
+                "rarity": 2
+            },
+            {
+                "id": 202000005,
+                "rarity": 0
+            },
+            {
+                "id": 202000008,
+                "rarity": 0
+            },
+            {
+                "id": 202000012,
+                "rarity": 0
+            },
+            {
+                "id": 202000013,
+                "rarity": 0
+            }
+        ],
+        "emotes": {
+            "standing": [
+                {
+                    "id": 302020001,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Angry.png"
+                },
+                {
+                    "id": 302020002,
+                    "rarity": 1,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Victory.png"
+                },
+                {
+                    "id": 302020003,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Fright.png"
+                },
+                {
+                    "id": 302020004,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Dance.png"
+                },
+                {
+                    "id": 302020005,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Love.png"
+                },
+                {
+                    "id": 302020006,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Pick.png"
+                },
+                {
+                    "id": 302020007,
+                    "rarity": 1,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Sadness.png"
+                },
+                {
+                    "id": 302020008,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Sleep.png"
+                },
+                {
+                    "id": 302020009,
+                    "rarity": 3,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Pick.png"
+                },
+                {
+                    "id": 302020010,
+                    "rarity": 3,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Stand_Dance.png"
+                }
+            ],
+            "seated": [
+                {
+                    "id": 302010001,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Angry.png"
+                },
+                {
+                    "id": 302010002,
+                    "rarity": 1,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Winner.png"
+                },
+                {
+                    "id": 302010003,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Fright.png"
+                },
+                {
+                    "id": 302010004,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Laugh.png"
+                },
+                {
+                    "id": 302010005,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Love.png"
+                },
+                {
+                    "id": 302010006,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Pick.png"
+                },
+                {
+                    "id": 302010007,
+                    "rarity": 1,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Sadness.png"
+                },
+                {
+                    "id": 302010008,
+                    "rarity": 2,
+                    "animation": "",
+                    "imgSrc": "/UI_Common/_Res/ItemIcon/motion/Sit_Sleep.png"
+                }
+            ]
+        }
+    },
+    {
+        "id": 100000023,
+        "name": "Brian",
+        "costumes": [
+            {
+                "id": 223000001,
+                "rarity": 1
+            },
+            {
+                "id": 223000002,
+                "rarity": 0
+            },
+            {
+                "id": 223000003,
+                "rarity": 2
+            }
+        ]
+    },
+    {
+        "id": 100000003,
+        "name": "Brodi",
+        "costumes": [
+            {
+                "id": 203000001,
+                "rarity": 1
+            },
+            {
+                "id": 203000003,
+                "rarity": 0
+            },
+            {
+                "id": 203000004,
+                "rarity": 0
+            },
+            {
+                "id": 203000008,
+                "rarity": 3
+            },
+            {
+                "id": 203000009,
+                "rarity": 0
+            },
+            {
+                "id": 203000011,
+                "rarity": 0
+            },
+            {
+                "id": 203000015,
+                "rarity": 0
+            },
+            {
+                "id": 203000016,
+                "rarity": 0
+            },
+            {
+                "id": 203000017,
+                "rarity": 0
+            },
+            {
+                "id": 203000018,
+                "rarity": 0
+            },
+            {
+                "id": 203000019,
+                "rarity": 2
+            }
+        ]
+    },
+    {
+        "id": 100000001,
+        "name": "Dao",
+        "costumes": [
+            {
+                "id": 201000001,
+                "rarity": 1
+            },
+            {
+                "id": 201000005,
+                "rarity": 2
+            },
+            {
+                "id": 201000006,
+                "rarity": 2
+            },
+            {
+                "id": 201000009,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000009,
+        "name": "Diz",
+        "costumes": [
+            {
+                "id": 209000001,
+                "rarity": 1
+            },
+            {
+                "id": 209000002,
+                "rarity": 2
+            },
+            {
+                "id": 209000005,
+                "rarity": 2
+            },
+            {
+                "id": 209000007,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000018,
+        "name": "Ethen",
+        "costumes": [
+            {
+                "id": 218000001,
+                "rarity": 1
+            },
+            {
+                "id": 218000005,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000022,
+        "name": "Keffy",
+        "costumes": [
+            {
+                "id": 222000001,
+                "rarity": 1
+            },
+            {
+                "id": 222000002,
+                "rarity": 0
+            },
+            {
+                "id": 222000004,
+                "rarity": 2
+            }
+        ]
+    },
+    {
+        "id": 100000012,
+        "name": "Kris",
+        "costumes": [
+            {
+                "id": 212000001,
+                "rarity": 1
+            },
+            {
+                "id": 212000002,
+                "rarity": 2
+            },
+            {
+                "id": 212000006,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000011,
+        "name": "Lodumani"
+    },
+    {
+        "id": 100000005,
+        "name": "Lucid"
+    },
+    {
+        "id": 100000010,
+        "name": "Marid",
+        "costumes": [
+            {
+                "id": 210000001,
+                "rarity": 1
+            },
+            {
+                "id": 210000002,
+                "rarity": 2
+            },
+            {
+                "id": 210000004,
+                "rarity": 0
+            },
+            {
+                "id": 210000005,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000038,
+        "name": "Mayor Zipi",
+        "costumes": [
+            {
+                "id": 238000001,
+                "rarity": 1
+            }
+        ]
+    },
+    {
+        "id": 100000020,
+        "name": "Mobi"
+    },
+    {
+        "id": 100000015,
+        "name": "Mos",
+        "costumes": [
+            {
+                "id": 215000001,
+                "rarity": 1
+            },
+            {
+                "id": 215000003,
+                "rarity": 2
+            }
+        ]
+    },
+    {
+        "id": 100000013,
+        "name": "Neo",
+        "costumes": [
+            {
+                "id": 213000001,
+                "rarity": 1
+            },
+            {
+                "id": 213000002,
+                "rarity": 1
+            },
+            {
+                "id": 213000004,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000008,
+        "name": "Pim"
+    },
+    {
+        "id": 100000004,
+        "name": "Pink Bean"
+    },
+    {
+        "id": 100000040,
+        "name": "Rave",
+        "costumes": [
+            {
+                "id": 240000001,
+                "rarity": 1
+            },
+            {
+                "id": 240000002,
+                "rarity": 2
+            }
+        ]
+    },
+    {
+        "id": 100000021,
+        "name": "Rex",
+        "costumes": [
+            {
+                "id": 221000001,
+                "rarity": 1
+            },
+            {
+                "id": 221000004,
+                "rarity": 2
+            },
+            {
+                "id": 221000005,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000014,
+        "name": "Sophia",
+        "costumes": [
+            {
+                "id": 214000001,
+                "rarity": 1
+            },
+            {
+                "id": 214000003,
+                "rarity": 0
+            },
+            {
+                "id": 214000004,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000006,
+        "name": "Tiera"
+    },
+    {
+        "id": 100000016,
+        "name": "Uni",
+        "costumes": [
+            {
+                "id": 216000001,
+                "rarity": 1
+            },
+            {
+                "id": 216000006,
+                "rarity": 0
+            },
+            {
+                "id": 216000007,
+                "rarity": 0
+            }
+        ]
+    },
+    {
+        "id": 100000007,
+        "name": "Vivi"
+    }
+]

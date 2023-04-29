@@ -26,7 +26,7 @@
                     <td>
                         <div class="grid">
                             <img
-                                src={`/images/${item.imgSrc}.png`}
+                                src={`${item.imgSrc}.png`}
                                 alt={item.name}
                                 width="48"
                                 height="48"

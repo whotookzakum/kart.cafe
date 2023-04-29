@@ -1,33 +1,27 @@
 <script>
-    import enUSLocale from "$lib/locale/en-US.json";
+    import { userLocale } from "$lib/stores";
     import TrackDifficulty from "./TrackDifficulty.svelte";
     export let track;
 </script>
 
-<li class="box surface hover">
+<li class="box focus-within-outline">
     <img
         class="bg"
         src={track.imgSrc}
-        alt={enUSLocale.String[`TrackName2_${track.id}`]}
+        alt=""
         width="408"
         height="380"
         loading="lazy"
     />
-    <a href={`/tracks/${track.id}`}>
-        <span class="absolute">
-            <span class="track-theme"
-                >{enUSLocale.String[`TrackThemeName_${track.theme}`]}</span
-            ><br />
-            <span class="track-name"
-                >{enUSLocale.String[`TrackName2_${track.id}`]}</span
-            >
-        </span>
+    <a href={`/${track.id}`}>
+        <span class="track-theme">{track.theme[$userLocale]}</span>
+        <span class="track-name">{track.name[$userLocale]}</span>
     </a>
     {#if track.hasMinimap}
         <img
             class="minimap absolute"
             src={`/images/Track/MiniMap/${track.id}_minimap.png`}
-            alt="MiniMap"
+            alt=""
             width="96"
             height="96"
             loading="lazy"
@@ -39,8 +33,8 @@
                 {#if track.reqLicense}
                     <img
                         class="license-level"
-                        src={`/images/Common/_Res/Texture/License_${track.reqLicense}_Simple.png`}
-                        alt={track.reqLicense}
+                        src={`/UI/Common/_Res/Texture/License_${track.reqLicense}_Simple.png`}
+                        alt=""
                         width="330"
                         height="367"
                         loading="lazy"
@@ -50,16 +44,16 @@
             </div>
             <div class="right">
                 <img
-                    src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
-                    alt="Speed mode"
+                    src="/UI/Lobby/_Res/Sprites/Lobby_MatchBtn_IconSpeed.png"
+                    alt=""
                     width="24"
                     height="24"
                     loading="lazy"
                 />
                 {#if track.itemMode}
                     <img
-                        src="/images/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png"
-                        alt="Item mode"
+                        src="/UI/Lobby/_Res/Sprites/Lobby_MatchBtn_IconItem.png"
+                        alt=""
                         width="24"
                         height="24"
                         loading="lazy"
@@ -68,37 +62,33 @@
             </div>
         </div>
     {/if}
-    <!-- <img
-        class="absolute"
-        style="bottom: 0.5rem; right: 0.5rem; display: block; margin: -2px; box-shadow: none"
-        src={`/images/Track/theme/${track.theme}.png`}
-        alt={track.theme}
-        width="28"
-        height="28"
-    /> -->
 </li>
 
 <style lang="scss">
     li {
         position: relative;
-        transition: all 0.1s linear;
+        transition: transform 0.1s linear;
         padding: 0;
         overflow: hidden;
-        filter: grayscale(0.3) brightness(1);
+        border: none;
+        background: black;
 
+        // click through images
         *:not(a) {
             pointer-events: none;
         }
-    }
 
-    li:hover,
-    li:focus-within {
-        transform: translateY(-4px);
-        filter: grayscale(0) brightness(1);
-        // border-color: var(--accent);
+        &:hover,
+        &:focus-within {
+            transform: translateY(-4px);
 
-        a .track-theme {
-            opacity: 1;
+            .bg {
+                filter: unset;
+            }
+
+            .track-theme {
+                opacity: 1;
+            }
         }
     }
 
@@ -106,6 +96,10 @@
         width: 100%;
         height: auto;
         display: block;
+        mask-image: linear-gradient(black, rgba(0, 0, 0, 0.2));
+        -webkit-mask-image: linear-gradient(black, rgba(0, 0, 0, 0.2));
+        filter: grayscale(0.45) brightness(0.9);
+        transition: filter 0.1s linear;
     }
 
     .minimap {
@@ -122,24 +116,15 @@
         width: 100%;
         color: inherit;
         border: none;
-
-        // Clickable everywhere
-        &::before {
-            content: "";
-            inset: 0;
-            position: absolute;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-        }
-
-        span.absolute {
-            z-index: 1;
-            bottom: 0;
-            left: 0;
-            padding: 0.5em;
-            font-weight: 500;
-            font-size: 1.13rem;
-            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-        }
+        display: grid;
+        align-content: flex-end;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        padding: 0.5em;
+        font-weight: 400;
+        font-size: 1.13rem;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 
         .track-theme {
             transition: all 0.1s linear;

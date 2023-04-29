@@ -1,0 +1,4 @@
+Diffuse=BlendFunc_DefBase
+Other[0]=BlendFunc_DefBlend
+Other[1]=T_FX_ETC_LinearColor_Base
+Other[2]=Podium_logo

@@ -2,7 +2,7 @@
     export let difficulty = 0;
 </script>
 
-<div class="difficulty">
+<div class="difficulty" aria-label={`Difficulty ${difficulty}`}>
     {#each { length: 5 } as _, i}
         <i class="dot" class:fill={i < difficulty} />
     {/each}

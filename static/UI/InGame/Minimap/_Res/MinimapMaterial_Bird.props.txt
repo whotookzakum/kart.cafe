@@ -1,0 +1,307 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[6] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+    ReferencedTextures[1] = Texture2D'/Game/ART/Env/Common/Blueprint/MiniMap/check.check'
+    ReferencedTextures[2] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_Arrow_01234__1_.MiniMap_Arrow_01234__1_'
+    ReferencedTextures[3] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_dot_00.MiniMap_dot_00'
+    ReferencedTextures[4] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_dot_01234__1_.MiniMap_dot_01234__1_'
+    ReferencedTextures[5] = Texture2D'/Game/UI/InGame/Minimap/_Res/minimapALP.minimapALP'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[20] =
+                {
+                    ParameterInfos[0] = { Name=Dot_Idx2 }
+                    ParameterInfos[1] = { Name=Dot_Idx3 }
+                    ParameterInfos[2] = { Name=CenterCircleMax }
+                    ParameterInfos[3] = { Name=Dot_Idx6 }
+                    ParameterInfos[4] = { Name=Dot_Idx7 }
+                    ParameterInfos[5] = { Name=ArrowIndex }
+                    ParameterInfos[6] = { Name=StartLineCount }
+                    ParameterInfos[7] = { Name=MapSize }
+                    ParameterInfos[8] = { Name=CenterCircleMin }
+                    ParameterInfos[9] = { Name=ArrowRot }
+                    ParameterInfos[10] = { Name=Mip }
+                    ParameterInfos[11] = { Name=StartLineSubRot }
+                    ParameterInfos[12] = { Name=ArrowSize }
+                    ParameterInfos[13] = { Name=StartLineRot }
+                    ParameterInfos[14] = { Name=Dot_Idx5 }
+                    ParameterInfos[15] = { Name=MapRotation }
+                    ParameterInfos[16] = { Name=Dot_Size }
+                    ParameterInfos[17] = { Name=Dot_Idx0 }
+                    ParameterInfos[18] = { Name=Dot_Idx1 }
+                    ParameterInfos[19] = { Name=Dot_Idx4 }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[18] =
+                {
+                    ParameterInfos[0] = { Name=MapPosition }
+                    ParameterInfos[1] = { Name=ViewAxisZ }
+                    ParameterInfos[2] = { Name=Dot_Pos6 }
+                    ParameterInfos[3] = { Name=ViewAxisX }
+                    ParameterInfos[4] = { Name=Dot_Pos2 }
+                    ParameterInfos[5] = { Name=StartLineSubPos }
+                    ParameterInfos[6] = { Name=Dot_Pos4 }
+                    ParameterInfos[7] = { Name=RayPos }
+                    ParameterInfos[8] = { Name=StartLineSubScale }
+                    ParameterInfos[9] = { Name=Dot_Pos5 }
+                    ParameterInfos[10] = { Name=StartLineScale }
+                    ParameterInfos[11] = { Name=StartLinePos }
+                    ParameterInfos[12] = { Name=Dot_Pos7 }
+                    ParameterInfos[13] = { Name=Dot_Pos0 }
+                    ParameterInfos[14] = { Name=Dot_Pos1 }
+                    ParameterInfos[15] = { Name=ArrowPos }
+                    ParameterInfos[16] = { Name=Dot_Pos3 }
+                    ParameterInfos[17] = { Name=ViewAxisY }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=ArrowImgTest }
+                    ParameterInfos[1] = { Name=Dot_Tex }
+                    ParameterInfos[2] = { Name=SDF_Texture_Object }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[20] =
+        {
+            ScalarValues[0] = 0
+            ScalarValues[1] = 0
+            ScalarValues[2] = 0.22
+            ScalarValues[3] = 0
+            ScalarValues[4] = 0
+            ScalarValues[5] = 0
+            ScalarValues[6] = 0
+            ScalarValues[7] = 0
+            ScalarValues[8] = 0.08
+            ScalarValues[9] = 0
+            ScalarValues[10] = 1.4
+            ScalarValues[11] = 0
+            ScalarValues[12] = 0
+            ScalarValues[13] = 0
+            ScalarValues[14] = 0
+            ScalarValues[15] = 0
+            ScalarValues[16] = 0
+            ScalarValues[17] = 0
+            ScalarValues[18] = 0
+            ScalarValues[19] = 0
+        }
+        VectorValues[18] =
+        {
+            VectorValues[0] = { R=0, G=0, B=0, A=1 }
+            VectorValues[1] = { R=0, G=0, B=0, A=1 }
+            VectorValues[2] = { R=0, G=0, B=0, A=1 }
+            VectorValues[3] = { R=0, G=0, B=0, A=1 }
+            VectorValues[4] = { R=0, G=0, B=0, A=1 }
+            VectorValues[5] = { R=0, G=0, B=0, A=1 }
+            VectorValues[6] = { R=0, G=0, B=0, A=1 }
+            VectorValues[7] = { R=0, G=0, B=0, A=1 }
+            VectorValues[8] = { R=0, G=0, B=0, A=1 }
+            VectorValues[9] = { R=0, G=0, B=0, A=1 }
+            VectorValues[10] = { R=0, G=0, B=0, A=1 }
+            VectorValues[11] = { R=0, G=0, B=0, A=1 }
+            VectorValues[12] = { R=0, G=0, B=0, A=1 }
+            VectorValues[13] = { R=0, G=0, B=0, A=1 }
+            VectorValues[14] = { R=0, G=0, B=0, A=1 }
+            VectorValues[15] = { R=0, G=0, B=0, A=1 }
+            VectorValues[16] = { R=0, G=0, B=0, A=1 }
+            VectorValues[17] = { R=0, G=0, B=0, A=1 }
+        }
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_Arrow_01234__1_.MiniMap_Arrow_01234__1_'
+            TextureValues[1] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_dot_01234__1_.MiniMap_dot_01234__1_'
+            TextureValues[2] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        }
+    }
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UI/InGame/Minimap/_Res/minimapALP.minimapALP'
+        ReferencedTextures[2] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_dot_00.MiniMap_dot_00'
+        ReferencedTextures[3] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_Arrow_01234__1_.MiniMap_Arrow_01234__1_'
+        ReferencedTextures[4] = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_dot_01234__1_.MiniMap_dot_01234__1_'
+        ReferencedTextures[5] = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        ReferencedTextures[6] = Texture2D'/Game/ART/Env/Common/Blueprint/MiniMap/check.check'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_Arrow_01234__1_.MiniMap_Arrow_01234__1_'
+        Name = ArrowImgTest
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UI/InGame/Minimap/_Res/MiniMap_dot_01234__1_.MiniMap_dot_01234__1_'
+        Name = Dot_Tex
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'
+        Name = SDF_Texture_Object
+        Group = None
+    }
+}
+CollectedScalarParameters[20] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Dot_Idx2, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=Dot_Idx3, Group=None }
+    CollectedScalarParameters[2] = { Value=0.22, Name=CenterCircleMax, Group=None }
+    CollectedScalarParameters[3] = { Value=0, Name=Dot_Idx6, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=Dot_Idx7, Group=None }
+    CollectedScalarParameters[5] = { Value=0, Name=ArrowIndex, Group=None }
+    CollectedScalarParameters[6] = { Value=0, Name=StartLineCount, Group=None }
+    CollectedScalarParameters[7] = { Value=0, Name=MapSize, Group=None }
+    CollectedScalarParameters[8] = { Value=0.08, Name=CenterCircleMin, Group=None }
+    CollectedScalarParameters[9] = { Value=0, Name=ArrowRot, Group=None }
+    CollectedScalarParameters[10] = { Value=1.4, Name=Mip, Group=None }
+    CollectedScalarParameters[11] = { Value=0, Name=StartLineSubRot, Group=None }
+    CollectedScalarParameters[12] = { Value=0, Name=ArrowSize, Group=None }
+    CollectedScalarParameters[13] = { Value=0, Name=StartLineRot, Group=None }
+    CollectedScalarParameters[14] = { Value=0, Name=Dot_Idx5, Group=None }
+    CollectedScalarParameters[15] = { Value=0, Name=MapRotation, Group=None }
+    CollectedScalarParameters[16] = { Value=0, Name=Dot_Size, Group=None }
+    CollectedScalarParameters[17] = { Value=0, Name=Dot_Idx0, Group=None }
+    CollectedScalarParameters[18] = { Value=0, Name=Dot_Idx1, Group=None }
+    CollectedScalarParameters[19] = { Value=0, Name=Dot_Idx4, Group=None }
+}
+CollectedVectorParameters[18] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = MapPosition
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ViewAxisZ
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos6
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ViewAxisX
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos2
+        Group = None
+    }
+    CollectedVectorParameters[5] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLineSubPos
+        Group = None
+    }
+    CollectedVectorParameters[6] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos4
+        Group = None
+    }
+    CollectedVectorParameters[7] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = RayPos
+        Group = None
+    }
+    CollectedVectorParameters[8] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLineSubScale
+        Group = None
+    }
+    CollectedVectorParameters[9] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos5
+        Group = None
+    }
+    CollectedVectorParameters[10] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLineScale
+        Group = None
+    }
+    CollectedVectorParameters[11] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = StartLinePos
+        Group = None
+    }
+    CollectedVectorParameters[12] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos7
+        Group = None
+    }
+    CollectedVectorParameters[13] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos0
+        Group = None
+    }
+    CollectedVectorParameters[14] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos1
+        Group = None
+    }
+    CollectedVectorParameters[15] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ArrowPos
+        Group = None
+    }
+    CollectedVectorParameters[16] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = Dot_Pos3
+        Group = None
+    }
+    CollectedVectorParameters[17] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ViewAxisY
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

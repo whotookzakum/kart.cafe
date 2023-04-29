@@ -1,5 +1,5 @@
 <script>
-    export let itemWidth  = 120;
+    export let itemWidth = 120;
 </script>
 
 <ul class="grid" style={`grid-template-columns: repeat(auto-fill, minmax(${itemWidth}px, 1fr));`}>

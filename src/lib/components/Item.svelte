@@ -1,37 +1,40 @@
 <script>
-    export let imgSrc, name, href;
+    import { userLocale } from "$lib/stores";
+    export let item;
 </script>
 
-<li class="item box surface hover">
-    <img src={imgSrc} alt="" width="408" height="380" loading="lazy" />
-    <a {href}>{name}</a>
+<li class="item box surface hover focus-within-outline">
+    <img src={item.imgSrc} alt="" width="408" height="380" loading="lazy" />
+    <a href={item.id}>{item.name[$userLocale]}</a>
 </li>
 
 <style lang="scss">
     li {
         position: relative;
         text-align: center;
-        transition: all 0.1s linear;
+        transition: transform 0.1s linear, border 0.1s linear, background-color 0.1s linear;
+        overflow: hidden;
 
         &:hover, &:focus-within {
             transform: translateY(-4px);
         }
     }
 
-    :global(.surface .item.surface:hover) {
-        background: var(--surface3);
-        border-color: var(--surface4, hsl(219, 70%, 45%));
-    }
-
     a {
         color: inherit;
         border: none;
+        outline: none;
 
         // Clickable everywhere
-        &::before {
+        &::before, &::after {
             content: "";
             inset: 0;
             position: absolute;
+        }
+
+        &::after {
+            z-index: -1;
+            transition: all 0.1s linear;
         }
     }
 
