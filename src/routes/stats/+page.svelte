@@ -276,6 +276,7 @@
         thead th {
             position: sticky;
             top: 90px;
+            z-index: 3;
             background: var(--surface1);
             font-size: 1rem;
             font-weight: 500;
