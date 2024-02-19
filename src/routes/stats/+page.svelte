@@ -1,36 +1,45 @@
 <script>
+    import MetaTags from "../../lib/components/MetaTags.svelte";
+
     export let data;
 
     $: karts = data.karts
-    .map(kart => {
-        return { ...kart, Score: getScore(kart, scoreVariables, rarityIndex) }
-    })
-    .sort((a, b) => {
-        if (sortMethod === "Score") {
-            if (sortOrder === "descending") {
-                return b.Score - a.Score
+        .map((kart) => {
+            return {
+                ...kart,
+                Score: getScore(kart, scoreVariables, rarityIndex),
+            };
+        })
+        .sort((a, b) => {
+            if (sortMethod === "Score") {
+                if (sortOrder === "descending") {
+                    return b.Score - a.Score;
+                }
+                return a.Score - b.Score;
             }
-            return a.Score - b.Score
-        }
 
-        let statToSortBy = scoreVariables.find(
-            (stat) => stat.key === sortMethod,
-        );
-        if (sortOrder === "descending") {
-            return b.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
-                statToSortBy.index
-            ][sortMethod] -
-            a.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
-                statToSortBy.index
-            ][sortMethod]
-        };
-        return a.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
-                statToSortBy.index
-            ][sortMethod] -
-            b.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
-                statToSortBy.index
-            ][sortMethod]
-    });
+            let statToSortBy = scoreVariables.find(
+                (stat) => stat.key === sortMethod,
+            );
+            if (sortOrder === "descending") {
+                return (
+                    b.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
+                        statToSortBy.index
+                    ][sortMethod] -
+                    a.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
+                        statToSortBy.index
+                    ][sortMethod]
+                );
+            }
+            return (
+                a.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
+                    statToSortBy.index
+                ][sortMethod] -
+                b.kartUpgradeDefaultGearVector[rarityIndex].gearLimit[
+                    statToSortBy.index
+                ][sortMethod]
+            );
+        });
 
     function getImg(id) {
         if (
@@ -131,6 +140,12 @@
     }
 </script>
 
+<MetaTags
+    title="Kart Stats | Kart Cafe"
+    description="Compare stats across all karts in KartRider: Drift."
+    image="/images/1184140_header.jpg"
+/>
+
 <h1>Kart Stats</h1>
 <div class="flex" style="align-items: start; gap: 1.5rem; flex-wrap: wrap">
     <div class="grid g-25">
@@ -153,7 +168,7 @@
     </div>
 
     <div class="grid g-25">
-        <strong>Score</strong>
+        <strong class="accent">Score</strong>
         {#each scoreVariables as item}
             <label>
                 <input type="checkbox" bind:checked={item.checked} />
@@ -163,7 +178,7 @@
     </div>
 
     <div class="grid g-25">
-        <strong>Sort by</strong>
+        <strong style="color: var(--highlight)">Sort by</strong>
         {#each scoreVariables as item}
             <label>
                 <input type="radio" bind:group={sortMethod} value={item.key} />
@@ -176,7 +191,7 @@
     </div>
 
     <div class="grid g-25">
-        <strong>Sort Order</strong>
+        <strong style="color: var(--highlight)">Sort Order</strong>
         <label>
             <input type="radio" bind:group={sortOrder} value="descending" /> Descending
         </label>
@@ -191,18 +206,29 @@
         <tr>
             <th>Kart</th>
             {#each scoreVariables as stat}
-                <th class:accent={stat.key === sortMethod}>
+                <th
+                    class:selected-col={stat.key === sortMethod}
+                    class:accent={stat.checked}
+                    data-sort-order={sortOrder === "descending" ? "↓" : "↑"}
+                >
                     {stat.shortName}
                 </th>
             {/each}
-            <th class:accent={sortMethod === "Score"}>Score</th>
+            <th
+                class:selected-col={sortMethod === "Score"}
+                data-sort-order={sortOrder === "descending" ? "↓" : "↑"}
+                >Score</th
+            >
         </tr>
     </thead>
     <tbody>
         {#each karts as kart, index}
             <tr>
                 <td style="font-size: 1rem; line-height: 1.3">
-                    <div class="kart-name-wrapper grid" data-index="{index + 1}/{karts.length}">
+                    <div
+                        class="kart-name-wrapper grid"
+                        data-index="{index + 1}/{karts.length}"
+                    >
                         <img
                             src={getImg(kart.kartItemId.replace(":", "_"))}
                             alt=""
@@ -214,12 +240,12 @@
                     </div>
                 </td>
                 {#each scoreVariables as stat}
-                    <td class:accent={stat.key === sortMethod}>
+                    <td>
                         {kart.kartUpgradeDefaultGearVector[rarityIndex]
                             .gearLimit[stat.index][stat.key]}
                     </td>
                 {/each}
-                <td class:accent={sortMethod === "Score"}>
+                <td>
                     {getScore(kart, scoreVariables, rarityIndex)}
                 </td>
             </tr>
@@ -239,7 +265,7 @@
         tbody td:not(:first-of-type) {
             text-align: center;
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         td,
@@ -254,7 +280,7 @@
             font-size: 1rem;
             font-weight: 500;
             border-bottom: 1px solid var(--surface2);
-            padding-block: 1rem;
+            padding-block: 1rem 1rem;
         }
     }
 
@@ -286,5 +312,10 @@
         left: 0;
         color: var(--text2);
         font-size: 0.8rem;
+    }
+
+    .selected-col::after {
+        content: " " attr(data-sort-order);
+        color: var(--highlight);
     }
 </style>
