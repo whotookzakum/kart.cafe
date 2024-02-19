@@ -14,7 +14,7 @@
             <span class="bold">Cafe <span class="beta-mark">BETA</span></span>
         </span>
     </a>
-    <div class="links">
+    <!-- <div class="links">
         <a href="/">Home</a>
         <hr />
         <a href="/">Guides</a>
@@ -34,6 +34,9 @@
             <option value="fr_FR">François</option>
             <option value="pt_BR">Português</option>
         </select>
+    </div> -->
+    <div class="links">
+        <a href="/stats">Kart Stats</a>
     </div>
     <div class="timer-wrapper grid">
         <span>Time until reset</span>

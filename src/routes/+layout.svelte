@@ -26,7 +26,7 @@
         margin: auto;
         display: grid;
         width: calc(100% - 2rem);
-        max-inline-size: 800px;
+        max-inline-size: 1050px;
         gap: 1rem;
     }
 

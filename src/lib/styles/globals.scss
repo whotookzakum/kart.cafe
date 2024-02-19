@@ -35,6 +35,10 @@ body {
     flex-wrap: wrap;
 }
 
+.accent {
+    color: var(--accent);
+}
+
 .box {
     border: 1px solid var(--surface2);
     box-shadow: 0 2px 4px var(--surface-shadow);
