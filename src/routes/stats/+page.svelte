@@ -94,8 +94,8 @@
         },
         {
             key: "DriftGaugePreservePercent",
-            name: "Crash Nitro Charge Protection",
-            shortName: "Crash Protect",
+            name: "Gauge Protection", // Crash Nitro Charge Protection, Crash Protection, Boost Gauge Protection
+            shortName: "Gauge Protect",
             index: 5,
         },
         {
